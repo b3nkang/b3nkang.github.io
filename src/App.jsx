@@ -1,10 +1,13 @@
 // import { useState } from 'react'
 import './App.css'
+import Education from './Education'
+import Header from './Header'
 
 function App() {
   return (
     <>
-      <h1> TBD </h1>
+      <Header />
+      <Education />
     </>
   )
 }
