@@ -1,0 +1,39 @@
+/* header and titlecard */
+
+.header {
+    margin-left: 4em;
+}
+
+a.contact {
+  margin: 0 2em 0 0;
+}
+
+div.contactPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-family: 'canela-dlight';
+  font-size: 18px;
+}
+
+h1.titlecardName {
+  text-align: left;
+  font-size: 70px;
+}
+
+.panel {
+    display: flex;
+    justify-content: space-between;
+    /* position:absolute; */
+}
+
+.description {
+    width: 50%;
+    font-family: 'canela-tlight';
+    text-align: left;
+    font-size: 18px;
+}
+
+.br {
+    height: 10px;
+}

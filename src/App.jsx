@@ -1,12 +1,12 @@
 // import { useState } from 'react'
 import './App.css'
 import Education from './Education'
-import Header from './Header'
+import Titlecard from './Titlecard'
 
 function App() {
   return (
     <>
-      <Header />
+      <Titlecard />
       <Education />
     </>
   )
