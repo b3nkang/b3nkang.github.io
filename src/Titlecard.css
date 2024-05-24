@@ -2,6 +2,7 @@
 
 .header {
     margin-left: 3em;
+    color: #213547;
 }
 
 a.contact {
@@ -34,6 +35,7 @@ h1.titlecardName {
     text-align: left;
     font-size: 18px;
     padding-right: 2em;
+    color: #213547;
 }
 
 .br {

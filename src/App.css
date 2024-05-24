@@ -21,7 +21,7 @@
  div.panelEd  {
   min-width: 90vw;
   min-height: 50vh;
-  background-color: rgba(40,75,60, 0.2);
+  /* background-color: rgba(40,75,60, 0.2); */
   position: relative;
  }
 
