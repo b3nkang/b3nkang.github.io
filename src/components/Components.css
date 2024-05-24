@@ -1,0 +1,10 @@
+.svg-container {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    height: 320px; /* Fixed height for consistency */
+    overflow: hidden;
+}
+
+.spacerWave {
+    width: 100vw;
+}
