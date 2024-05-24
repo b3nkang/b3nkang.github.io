@@ -16,8 +16,10 @@ function Titlecard(){
                 Hi, welcome to my personal site! My name is Ben, and I'm a software developer and sophomore at Brown University. 
                 <div className="br"></div>
                 I'm interested in computer science broadly, with a focus on systems, and I also do full-stack development. At Brown, I'm on the Sc.B. track for Computer Science.
+                {/* <div className="br"></div>
+                On campus, I'm involved with Full Stack @ Brown, Brown Chess Club, and Brown Cycling Team. */}
                 <div className="br"></div>
-                On the side, I often misplay the Grand Prix Attack on Chess.com, struggle to keep up with Brown's Cycling Team, and do some photography work when I can find the time!
+                In my spare time, I can be found misplaying the Grand Prix Attack on Chess.com, updating my list of favorite restaurants on Beli, and doing some photography work here and there!
             </div>
         </div>
     )
