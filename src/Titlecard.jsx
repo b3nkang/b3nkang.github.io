@@ -17,7 +17,7 @@ function Titlecard(){
                 <div className="br"></div>
                 I'm interested in computer science broadly, with a focus on systems, and I also do full-stack development. At Brown, I'm on the Sc.B. track for Computer Science.
                 <div className="br"></div>
-                On the side, I misplay the Grand Prix Attack on Chess.com, struggle to keep up with Brown's Cycling Team, and do some formal photography when I can find the time!
+                On the side, I often misplay the Grand Prix Attack on Chess.com, struggle to keep up with Brown's Cycling Team, and do some photography work when I can find the time!
             </div>
         </div>
     )

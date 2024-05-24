@@ -1,7 +1,7 @@
 /* header and titlecard */
 
 .header {
-    margin-left: 4em;
+    margin-left: 3em;
 }
 
 a.contact {
@@ -24,7 +24,7 @@ h1.titlecardName {
 .panel {
     display: flex;
     justify-content: space-between;
-    /* position:absolute; */
+    background-color: white;
 }
 
 .description {
@@ -32,6 +32,7 @@ h1.titlecardName {
     font-family: 'canela-tlight';
     text-align: left;
     font-size: 18px;
+    padding-right: 2em;
 }
 
 .br {
