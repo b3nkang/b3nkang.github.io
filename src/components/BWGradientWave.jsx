@@ -3,7 +3,8 @@ import Spacer from './Spacer'
 import SpacerWave from './SpacerWave';
 import Wave from './Wave';
 import './Components.css'
-export default function BWGradientWave({indexMod =1, spacerHeight=5, colorArray=  [bwgrad2, bwgrad3, bwgrad5, bwgrad7, bwgrad9, bwgrad11, bwgrad13, bwgrad15, bwgrad16, bwgrad17, bwgrad18, bwgrad19, bwgrad20] }) {
+
+export default function BWGradientWave({nextSectionRef, indexMod =1, spacerHeight=5, colorArray=  [bwgrad2, bwgrad3, bwgrad5, bwgrad7, bwgrad9, bwgrad11, bwgrad13, bwgrad15, bwgrad16, bwgrad17, bwgrad18, bwgrad19, bwgrad20] }) {
 
     return (
         <>     
@@ -14,6 +15,17 @@ export default function BWGradientWave({indexMod =1, spacerHeight=5, colorArray=
                         <div key={index} style={{ marginBottom: (index === colorArray.length - 1) ? "0px" : "-750px" }}>
                             <Wave color={color} />
                             {!isLast && <SpacerWave color={color} height={spacerHeight} />}
+                            {isLast && <div 
+                                ref={nextSectionRef}
+                                className="spacerWave" 
+                                style={
+                                    {
+                                        backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})`,
+                                        minHeight: `10px`
+                                    }
+                                }
+                            >
+                            </div>}
                         </div>
                     );
                 })
