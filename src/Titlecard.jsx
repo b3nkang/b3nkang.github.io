@@ -1,6 +1,31 @@
 import './Titlecard.css';
+import { useEffect, useRef } from 'react';
 
-function Titlecard(){
+function Titlecard({ findNewHeight }){
+    const descRef = useRef(null)
+
+    const updateHeight = () => {
+        if (descRef.current) {
+            findNewHeight(descRef.current.clientHeight)
+            console.log("useEffect hit with ref of height: ",descRef.current.clientHeight)
+        }
+    }
+
+    useEffect(() => {
+        updateHeight();
+        window.addEventListener('resize', updateHeight);
+
+        return () => {
+        window.removeEventListener('resize', updateHeight);
+        };
+    },[findNewHeight])
+    
+    // useEffect(() => {
+    //     if (descRef.current) {
+    //         findNewHeight(descRef.current.clientHeight)
+    //         console.log("useEffect hit with ref of height: ",descRef.current.clientHeight)
+    //     }
+    // }, [descRef, findNewHeight]);
 
     return (
         <div className='panel'>
@@ -12,7 +37,7 @@ function Titlecard(){
                     <div>linkedin: <a className="contact" href="linkedin.com/in/b3nkang">in/b3nkang</a></div>
                 </div>
             </div>
-            <div className='description'>
+            <div ref={descRef} className='description'>
                 Hi, welcome to my personal site! My name is Ben, and I'm a software developer and sophomore at Brown University. 
                 <div className="br"></div>
                 I'm interested in computer science broadly, with a focus on systems, and I also do full-stack development. At Brown, I'm on the Sc.B. track for Computer Science.
