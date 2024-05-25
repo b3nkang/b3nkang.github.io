@@ -1,17 +1,15 @@
 // import { useState } from 'react'
 import './App.css'
 import Education from './Education'
-import Titlecard from './Titlecard'
 import Spacer from './components/Spacer'
 import BWGradient from './components/BWGradient'
 import { transpWhite } from './utils/ColorProps'
-import WavySpacer from './components/Wave'
 import BWGradientWave from './components/BWGradientWave'
 
-function App() {
+function App({ titlecardSpacerHeight }) {
   return (
     <div className='overallContainer'>
-      <Spacer height={30} color={transpWhite} zindex={998} />
+      <Spacer height={titlecardSpacerHeight + 40} color={transpWhite} zindex={998} />
       {/* <BWGradient spacerHeight={5} indexMod={1} /> */}
       <BWGradientWave spacerHeight={462} indexMod={1} />
       <Education />
@@ -21,4 +19,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
