@@ -2,18 +2,21 @@ import { transpWhite, bwgrad1, bwgrad2, bwgrad3, bwgrad4, bwgrad5, bwgrad6, bwgr
 import Spacer from './Spacer'
 import SpacerWave from './SpacerWave';
 import Wave from './Wave';
-
+import './Components.css'
 export default function BWGradientWave({indexMod =1, spacerHeight=5, colorArray=  [bwgrad2, bwgrad3, bwgrad5, bwgrad7, bwgrad9, bwgrad11, bwgrad13, bwgrad15, bwgrad16, bwgrad17, bwgrad18, bwgrad19, bwgrad20] }) {
 
     return (
         <>     
             { 
-                colorArray.map((color, index) => (
-                    <div key={index} style={{ marginBottom: (index === colorArray.length - 1) ? "0px" : "-750px" }}>
-                        <Wave color={color} />
-                        <SpacerWave color={color} height={spacerHeight} />
-                    </div>
-                ))
+                colorArray.map((color, index) => {
+                    const waveClassName = index === 0 ? "fix" : null;
+                    return (
+                        <div key={index} className={waveClassName} style={{ marginBottom: (index === colorArray.length - 1) ? "0px" : "-750px" }}>
+                            <Wave color={color} />
+                            <SpacerWave color={color} height={spacerHeight} />
+                        </div>
+                    );
+                })
             }
         </>
     )
