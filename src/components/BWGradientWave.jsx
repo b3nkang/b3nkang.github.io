@@ -10,18 +10,30 @@ export default function BWGradientWave({nextSectionRef, indexMod =1, spacerHeigh
         <>     
             { 
                 colorArray.map((color, index) => {
-                    const isLast = index === colorArray.length -1 ? true : false
+                    const isRefIndex = index === colorArray.length - 10 ? true : false
+                    const isLast = index === colorArray.length - 1 ? true : false
+
                     return (
                         <div key={index} style={{ marginBottom: (index === colorArray.length - 1) ? "0px" : "-750px" }}>
                             <Wave color={color} />
-                            {!isLast && <SpacerWave color={color} height={spacerHeight} />}
-                            {isLast && <div 
+                            {!isLast && !isRefIndex && <SpacerWave color={color} height={spacerHeight} />}
+                            {isRefIndex && <div 
                                 ref={nextSectionRef}
                                 className="spacerWave" 
                                 style={
                                     {
                                         backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})`,
-                                        minHeight: `10px`
+                                        minHeight: `${spacerHeight}px`,
+                                    }
+                                }
+                            >
+                            </div>}
+                            {isLast && <div 
+                                className="spacerWave" 
+                                style={
+                                    {
+                                        backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})`,
+                                        minHeight: `0px`,
                                     }
                                 }
                             >
