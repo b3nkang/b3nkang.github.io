@@ -45,7 +45,7 @@ function Titlecard({ findNewHeight }){
                 On campus, I'm involved with Full Stack @ Brown, Brown Chess Club, and Brown Cycling Team. */}
                 <div className="br"></div>
                 {/* In my spare time, I can be found misplaying the Grand Prix Attack on Chess.com, updating my list of favorite restaurants on Beli, and doing some photography work here and there! */}
-                On the side, I can be found misplaying the Grand Prix Attack on Chess.com, struggling to not drop on Brown Cycling Team rides, and doing some photography work here and there!
+                On the side, I can be found misplaying the Grand Prix Attack on Chess.com, struggling to keep up on Brown Cycling Team rides, and doing some photography work here and there!
             </div>
         </div>
     )
