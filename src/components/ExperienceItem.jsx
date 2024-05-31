@@ -1,7 +1,7 @@
 import { minHeight } from '@mui/system'
 import './Components.css'
 
-export default function ExperienceItem({name, title, period, location, desc, bottomPadding=3}) {
+export default function ExperienceItem({name, title, period, location, desc, bottomPadding=3, mb=3, mt=4}) {
     return (
     <div>
         <div className="expItem">
@@ -18,15 +18,17 @@ export default function ExperienceItem({name, title, period, location, desc, bot
         <div style={{
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'center'
+            justifyContent: 'center',
+            alignItems: 'center'
         }}>
             <div style={{
                 minHeight: `${bottomPadding}px`,
                 backgroundColor: 'rgb(0,0,0)',
                 borderRadius: 20,
-                margin: "3vh 25vw"
+                margin: `${mt}vh 0 ${mb}vh 0`,
+                width: "50px"
             }}>
-        </div>
+            </div>
         </div>
     </div>
     )

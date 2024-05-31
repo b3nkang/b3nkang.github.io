@@ -95,12 +95,14 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                                         desc="Led homepage migration to TS/React/Next.js stack, deprecating thousands of lines of code. Optimized site performance with React Lazy Load, Next.js Image and server-side rendering to achieve Lighthouse SEO score of 100."
                                     />
                                     <ExperienceItem 
-                                        name="AI & Predictive Analytics Lab, NYU Courant"
-                                        title="Visiting Researcher"
+                                        name="AI & Predictive Analytics Lab"
+                                        title="Visiting Researcher, NYU Courant"
                                         period="June 2023 – Oct. 2023"
                                         location="New York, NY"
                                         desc="Built world’s largest corpus of queryable LENR research on AI & Low-Energy Nuclear Reactions (AI-LENR) team. Co-authored paper in IEEE ICBDA 2024 & was main contributor to LENRdashboard.com, built with D3.js, JS, HTML/CSS."
                                         bottomPadding={0}
+                                        mt={5}
+                                        mb={0}
                                     />  
                                 </div>
                             </div>
