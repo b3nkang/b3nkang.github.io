@@ -1,8 +1,8 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'canela-tlight', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
+  font-size: 18px;
   color-scheme: light dark;
   /* color: rgba(255, 255, 255, 0.87); */
   /* background-color: #242424; */
@@ -22,6 +22,38 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  font-family: 'canela-dregular';
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.75em;
+  line-height: 1.1;
+  font-family: 'canela-dregularitalic';
+  color: black;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 1.1;
+  font-family: 'canela-dregular';
+  color: black;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+br {
+  height: 0;
+}
 @font-face {
     font-family: 'canela-light';
     src: url('./assets/fonts/Canela Family/Canela-Light-Trial.otf') format('opentype');
@@ -54,6 +86,11 @@ h1 {
 }
 
 @font-face {
+    font-family: 'canela-dlightitalic';
+    src: url('./assets/fonts/Canela Deck Family/CanelaDeck-LightItalic-Trial.otf') format('opentype');
+}
+
+@font-face {
     font-family: 'canela-dregular';
     src: url('./assets/fonts/Canela Deck Family/CanelaDeck-Regular-Trial.otf') format('opentype');
 }
@@ -62,6 +99,12 @@ h1 {
     font-family: 'canela-dthin';
     src: url('./assets/fonts/Canela Deck Family/CanelaDeck-Thin-Trial.otf') format('opentype');
 }
+
+@font-face {
+    font-family: 'canela-dregularitalic';
+    src: url('./assets/fonts/Canela Deck Family/CanelaDeck-RegularItalic-Trial.otf') format('opentype');
+}
+
 
 a {
   font-weight: 500;

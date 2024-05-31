@@ -1,10 +1,15 @@
 import { useEffect, useState } from "react"
 import './App.css'
+import ExperienceItem from "./components/ExperienceItem"
 
 function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
-    const divStyling = {
+    // const divStyling = {
+    //     backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})`,
+    // }
+    const [divStyling, setDivStyling] = useState({ 
         backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})`,
-    }
+        position: `relative`
+    })
 
     const [refStyling, setRefStyling] = useState({})
     const [wave0Styling, setWave0Styling] = useState({})
@@ -26,6 +31,10 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                     });
 
                     /* refactor to use for loop */
+                    setDivStyling({        
+                        backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})`,
+                        // position: 'fixed'
+                    })
                     setWave0Styling({ backgroundColor: 'rgba(47,47,47,1.0)' });
                     setWave1Styling({ backgroundColor: 'rgba(80,80,80,1.0)' });
                     setWave2Styling({ backgroundColor: 'rgba(120,120,120,1.0)' });
@@ -61,8 +70,38 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                     <div className="wave1" style={wave1Styling}>
                         <div className="wave2" style={wave2Styling}>
                             <div className="wave3" style={wave3Styling}>
+                                <div className="expCont"><h2>past experience</h2></div>
                                 <div className="wave4" style={wave4Styling}>
-                                    <h1>past experience</h1>
+                                    <ExperienceItem 
+                                        name="Intus Care"
+                                        title="Software Engineering Intern"
+                                        period="Jun. 2024 – Aug. 2024"
+                                        location="Cambridge, MA"
+                                        desc="Incoming for summer 2024."
+                                    />
+                                    {/* <p>lorem ipsum dolor sit amet consecteteur adpiscing elit. the quick brown fox jumps over the lazy dog, sumus esse gaudeamus igitur iuvenes dum sumus, post iucundem senectutem; post molestam iuventutem, nos habebit humus.</p> */}
+                                    <ExperienceItem 
+                                        name="Refer Me"
+                                        title="Software Engineering Intern"
+                                        period="Feb. 2024 – Apr. 2024"
+                                        location="(Remote)   Seattle, WA"
+                                        desc="Engineered job scraper with bs4/Selenium, utilizing instructor & Pydantic to extract JSON via OpenAI's API. Reduced scraper API costs by 10^3% ($0.01 to $0.0005/call) via chunking/downgrades while holding 98% output accuracy."
+                                    />
+                                    <ExperienceItem 
+                                        name="Sift"
+                                        title="Software Engineering Intern"
+                                        period="Nov. 2023 – Jan. 2024"
+                                        location="Providence, RI"
+                                        desc="Led homepage migration to TS/React/Next.js stack, deprecating thousands of lines of code. Optimized site performance with React Lazy Load, Next.js Image and server-side rendering to achieve Lighthouse SEO score of 100."
+                                    />
+                                    <ExperienceItem 
+                                        name="AI & Predictive Analytics Lab, NYU Courant"
+                                        title="Visiting Researcher"
+                                        period="June 2023 – Oct. 2023"
+                                        location="New York, NY"
+                                        desc="Built world’s largest corpus of queryable LENR research on AI & Low-Energy Nuclear Reactions (AI-LENR) team. Co-authored paper in IEEE ICBDA 2024 & was main contributor to LENRdashboard.com, built with D3.js, JS, HTML/CSS."
+                                        bottomPadding={0}
+                                    />  
                                 </div>
                             </div>
                         </div>

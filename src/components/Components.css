@@ -8,3 +8,29 @@
 .spacerWave {
     width: 100vw;
 }
+
+
+/* ExperienceItem.jsx */
+
+div.expItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+div.expItemDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  flex-basis: 33%;
+  text-align: right;
+}
+
+div.expItemTitle {
+    flex-basis: 66%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
