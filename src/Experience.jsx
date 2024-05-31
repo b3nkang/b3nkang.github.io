@@ -19,6 +19,13 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
     const [wave4Styling, setWave4Styling] = useState({})
 
     const waveSetStateArray = [setWave0Styling,setWave1Styling,setWave2Styling,setWave3Styling,setWave4Styling]
+    const expWaveColorArray = [
+        { backgroundColor: 'rgba(47,47,47,1.0)' },
+        { backgroundColor: 'rgba(80,80,80,1.0)' },
+        { backgroundColor: 'rgba(120,120,120,1.0)' },
+        { backgroundColor: 'rgba(217,217,217,1.0)' },
+        { backgroundColor: 'rgba(255,255,255,1.0)' }
+    ]
 
     useEffect(() => {
         function checkRefLocation() {
@@ -29,26 +36,21 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                         backgroundColor: 'rgba(25,25,25,1.0)', 
                         // boxShadow: `0px 0px 0px 30px rgba(255, 255, 255, 1.0)`
                     });
-
-                    /* refactor to use for loop */
+                                        
                     setDivStyling({        
                         backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})`,
                         // position: 'fixed'
                     })
-                    setWave0Styling({ backgroundColor: 'rgba(47,47,47,1.0)' });
-                    setWave1Styling({ backgroundColor: 'rgba(80,80,80,1.0)' });
-                    setWave2Styling({ backgroundColor: 'rgba(120,120,120,1.0)' });
-                    setWave3Styling({ backgroundColor: 'rgba(217,217,217,1.0)' });
-                    setWave4Styling({ backgroundColor: 'rgba(255,255,255,1.0)' });
+
+                    for (let i = 0; i < 5; i++) {
+                        waveSetStateArray[i](expWaveColorArray[i])
+                    }
                     console.log("Set ref styling to grey");
                 } else {
-                    /* refactor to use for loop */
                     setRefStyling({ backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})` });
-                    setWave0Styling({ backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})` });
-                    setWave1Styling({ backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})` });
-                    setWave2Styling({ backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})` });
-                    setWave3Styling({ backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})` });
-                    setWave4Styling({ backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})` });
+                    waveSetStateArray.forEach((setter) => {
+                        setter({ backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})` })
+                    })
                     console.log("Reset ref styling to original color");
                 }
             } else {
