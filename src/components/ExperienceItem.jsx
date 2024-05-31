@@ -24,7 +24,7 @@ export default function ExperienceItem({name, title, period, location, desc, bot
                 minHeight: `${bottomPadding}px`,
                 backgroundColor: 'rgb(0,0,0)',
                 borderRadius: 20,
-                margin: "3vh 20vw"
+                margin: "3vh 25vw"
             }}>
         </div>
         </div>

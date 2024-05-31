@@ -38,7 +38,7 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                     setWave0Styling({ backgroundColor: 'rgba(47,47,47,1.0)' });
                     setWave1Styling({ backgroundColor: 'rgba(80,80,80,1.0)' });
                     setWave2Styling({ backgroundColor: 'rgba(120,120,120,1.0)' });
-                    setWave3Styling({ backgroundColor: 'rgba(177,177,177,1.0)' });
+                    setWave3Styling({ backgroundColor: 'rgba(217,217,217,1.0)' });
                     setWave4Styling({ backgroundColor: 'rgba(255,255,255,1.0)' });
                     console.log("Set ref styling to grey");
                 } else {
@@ -84,7 +84,7 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                                         name="Refer Me"
                                         title="Software Engineering Intern"
                                         period="Feb. 2024 – Apr. 2024"
-                                        location="(Remote)   Seattle, WA"
+                                        location="(Remote) Seattle, WA"
                                         desc="Engineered job scraper with bs4/Selenium, utilizing instructor & Pydantic to extract JSON via OpenAI's API. Reduced scraper API costs by 10^3% ($0.01 to $0.0005/call) via chunking/downgrades while holding 98% output accuracy."
                                     />
                                     <ExperienceItem 
