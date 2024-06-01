@@ -28,7 +28,6 @@ div.expItemDetails {
 }
 
 div.expItemTitle {
-    flex-basis: 66%;
     display: flex;
     flex-direction: column;
     justify-content: center;
