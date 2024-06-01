@@ -36,7 +36,7 @@ export default function ExperienceItem({iconStyling, imgSrc, alt, name, title, p
         }}>
             <div style={{
                 minHeight: `${bottomPadding}px`,
-                backgroundColor: 'rgb(200,200,200)',
+                backgroundColor: 'rgb(205,205,205)',
                 borderRadius: 20,
                 margin: `${mt}vh 0 ${mb}vh 0`,
                 width: "100%",

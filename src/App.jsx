@@ -1,4 +1,4 @@
-import { useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import './App.css'
 import Education from './Education'
 import Spacer from './components/Spacer'
@@ -10,10 +10,20 @@ import { transpWhite, bwgrad1, bwgrad2, bwgrad3, bwgrad4, bwgrad5, bwgrad6, bwgr
 function App({ titlecardSpacerHeight }) {
 
   const waveEndRef = useRef(null)
+  const [windowHeight, setWindowHeight] = useState(`${titlecardSpacerHeight + 40}px`)
+
+  useEffect(() => {
+    const vhInPx = window.innerHeight * 0.3;
+    if (vhInPx >= (titlecardSpacerHeight+40)) {
+      setWindowHeight(`${vhInPx}px`)
+    } else if ((titlecardSpacerHeight+40) > vhInPx) {
+      setWindowHeight(`${(titlecardSpacerHeight+40)}px`)
+    }
+  }, [titlecardSpacerHeight]);
 
   return (
     <div className='overallContainer'>
-      <Spacer height={`${titlecardSpacerHeight + 40}px`} color={transpWhite} zindex={998} />
+      <Spacer height={windowHeight} color={transpWhite} zindex={998} />
       {/* <BWGradient spacerHeight={5} indexMod={1} /> */}
       <BWGradientWave nextSectionRef={waveEndRef} spacerHeight={462} indexMod={1} />
       {/* <BWGradientWave 

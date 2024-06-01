@@ -24,7 +24,7 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
         { backgroundColor: 'rgba(80,80,80,1.0)' },
         { backgroundColor: 'rgba(120,120,120,1.0)' },
         { backgroundColor: 'rgba(205,205,205,1.0)' },
-        { backgroundColor: 'rgba(235,235,235,1.0)' }
+        { backgroundColor: 'rgba(240,240,240,1.0)' }
     ]
 
     useEffect(() => {
