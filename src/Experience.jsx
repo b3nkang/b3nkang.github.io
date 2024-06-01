@@ -91,7 +91,7 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                                         title="Software Engineering Intern"
                                         period="Jun. 2024 – Aug. 2024"
                                         location="Cambridge, MA"
-                                        desc="Incoming for summer 2024, to work on the healthcare analytics dash team. "
+                                        desc="Incoming for summer 2024, working on healthcare analytics with React, Bootstrap, and SCSS."
                                         iconStyling={iconStyling}
                                     />
                                     <ExperienceItem 
