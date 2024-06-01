@@ -32,23 +32,15 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
             if (nextSectionRef.current) {
                 if (nextSectionRef.current.getBoundingClientRect().top < 0) {
                     setRefStyling({ 
-                        // backgroundColor: 'rgba(255, 255, 255, 1.0)', 
                         backgroundColor: 'rgba(25,25,25,1.0)', 
-                        // boxShadow: `0px 0px 0px 30px rgba(255, 255, 255, 1.0)`
                     });
                                         
                     setDivStyling({        
                         backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})`,
-                        // position: 'fixed'
                     })
 
                     setIconStyling({ 
-                        width: "51px",
-                        height: "51px",
-                        borderRadius: "4px",
-                        marginBottom: "6px",
                         opacity: 1, 
-                        transition: "opacity 1.75s ease-in-out" 
                     })
 
                     for (let i = 0; i < 5; i++) {
@@ -57,19 +49,18 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
 
                     console.log("Set ref styling to grey");
                 } else {
-                    setRefStyling({ backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})` });
+                    setRefStyling({ 
+                        backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})`
+                    });
+
                     waveSetStateArray.forEach((setter) => {
                         setter({ backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})` })
                     })
 
                     setIconStyling({
-                        width: "52px",
-                        height: "52px",
-                        borderRadius: "4px",
-                        marginBottom: "4px",
                         opacity: 0, 
-                        transition: "opacity 1.75s ease-in-out" 
                     })
+                    
                     console.log("Reset ref styling to original color");
                 }
             } else {
@@ -100,7 +91,7 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                                         title="Software Engineering Intern"
                                         period="Jun. 2024 – Aug. 2024"
                                         location="Cambridge, MA"
-                                        desc="Incoming for summer 2024."
+                                        desc="Incoming for summer 2024, to work on the healthcare analytics dash team. "
                                         iconStyling={iconStyling}
                                     />
                                     <ExperienceItem 
