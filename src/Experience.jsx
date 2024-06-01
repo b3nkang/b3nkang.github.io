@@ -17,7 +17,7 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
     const [wave2Styling, setWave2Styling] = useState({})
     const [wave3Styling, setWave3Styling] = useState({})
     const [wave4Styling, setWave4Styling] = useState({})
-
+    const [iconStyling, setIconStyling] = useState({ opacity: 0 })
     const waveSetStateArray = [setWave0Styling,setWave1Styling,setWave2Styling,setWave3Styling,setWave4Styling]
     const expWaveColorArray = [
         { backgroundColor: 'rgba(47,47,47,1.0)' },
@@ -42,14 +42,33 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                         // position: 'fixed'
                     })
 
+                    setIconStyling({ 
+                        width: "52px",
+                        height: "52px",
+                        borderRadius: "4px",
+                        marginBottom: "4px",
+                        opacity: 1, 
+                        transition: "opacity 1.75s ease-in-out" 
+                    })
+
                     for (let i = 0; i < 5; i++) {
                         waveSetStateArray[i](expWaveColorArray[i])
                     }
+
                     console.log("Set ref styling to grey");
                 } else {
                     setRefStyling({ backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})` });
                     waveSetStateArray.forEach((setter) => {
                         setter({ backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})` })
+                    })
+
+                    setIconStyling({
+                        width: "52px",
+                        height: "52px",
+                        borderRadius: "4px",
+                        marginBottom: "4px",
+                        opacity: 0, 
+                        transition: "opacity 1.75s ease-in-out" 
                     })
                     console.log("Reset ref styling to original color");
                 }
@@ -82,8 +101,8 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                                         period="Jun. 2024 – Aug. 2024"
                                         location="Cambridge, MA"
                                         desc="Incoming for summer 2024."
+                                        iconStyling={iconStyling}
                                     />
-                                    {/* <p>lorem ipsum dolor sit amet consecteteur adpiscing elit. the quick brown fox jumps over the lazy dog, sumus esse gaudeamus igitur iuvenes dum sumus, post iucundem senectutem; post molestam iuventutem, nos habebit humus.</p> */}
                                     <ExperienceItem 
                                         imgSrc={"/src/assets/images/usereferme_logo.jpeg"} 
                                         alt={"Refer Me logo"}
@@ -91,7 +110,8 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                                         title="Software Engineering Intern"
                                         period="Feb. 2024 – Apr. 2024"
                                         location="(Remote) Seattle, WA"
-                                        desc="Engineered job scraper with bs4/Selenium, utilizing instructor & Pydantic to extract JSON via OpenAI's API. Reduced scraper API costs by 10^3% ($0.01 to $0.0005/call) via chunking inputs and model downgrades while holding 98% detail accuracy."
+                                        desc="Engineered job scraper with bs4/Selenium, utilizing instructor & Pydantic to extract JSON via OpenAI's API. Reduced scraper API costs by 10^3% ($0.01 to $0.0005/call) via chunking inputs and model downgrades while holding 98% accuracy."
+                                        iconStyling={iconStyling}
                                     />
                                     <ExperienceItem 
                                         imgSrc={"/src/assets/images/letsift_logo.jpeg"} 
@@ -101,6 +121,7 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                                         period="Nov. 2023 – Jan. 2024"
                                         location="Providence, RI"
                                         desc="Led homepage migration to React/TypeScript/Next.js stack, deprecating thousands of lines of code. Optimized site performance with React Lazy Load, Next.js Image and server-side rendering to achieve Lighthouse SEO score of 100."
+                                        iconStyling={iconStyling}
                                     />
                                     <ExperienceItem
                                         imgSrc={"/src/assets/images/cims_logo.jpeg"} 
@@ -113,6 +134,7 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                                         bottomPadding={0}
                                         mt={4.5}
                                         mb={0}
+                                        iconStyling={iconStyling}
                                     />  
                                 </div>
                             </div>

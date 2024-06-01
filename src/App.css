@@ -19,7 +19,7 @@ div.fixerRef {
 /* experience */
  div.panelEd  {
   min-width: 72vw;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-color: black;
   position: relative;
   /* margin: 0vh 0 5vh 0; */
@@ -28,7 +28,7 @@ div.fixerRef {
 
  div.expPanel {
   min-width: 65vw;
-  min-height: 50vh;
+  /* min-height: 50vh; */
   /* padding: 2vh 2vw; */
   padding: 20px;
   transition: background-color 0.15s ease-in-out;
@@ -42,7 +42,7 @@ div.fixerRef {
     border-radius: 20px;
     z-index: 1000;
     min-width: 55vw;
-    min-height: 50vh;
+    /* min-height: 50vh; */
     transition: background-color 0.45s ease-in-out;
  }
 
@@ -53,7 +53,7 @@ div.fixerRef {
     border-radius: 20px;
     z-index: 1000;
     min-width: 50vw;
-    min-height: 50vh;
+    /* min-height: 50vh; */
     transition: background-color 0.65s ease-in-out;
  }
 
@@ -63,7 +63,7 @@ div.fixerRef {
     border-radius: 20px;
     z-index: 1000;
     min-width: 49vw;
-    min-height: 50vh;
+    /* min-height: 50vh; */
     transition: background-color 0.85s ease-in-out;
  }
 
@@ -73,17 +73,17 @@ div.fixerRef {
     border-radius: 20px;
     z-index: 1000;
     min-width: 43vw;
-    min-height: 50vh;
+    /* min-height: 50vh; */
     transition: background-color 1.25s ease-in-out;
  }
 
   div.wave4 {
-    padding: 2.5vw 3vw 0vw 3vw;
+    padding: 2.8vw 3vw 0.5vw 3vw;
     /* background-color: rgb(255,255,255); */
     border-radius: 20px;
     z-index: 1000;
     min-width: 37vw;
-    min-height: 50vh;
+    /* min-height: 50vh; */
     transition: background-color 1.5s ease-in-out;
  }
 

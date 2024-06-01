@@ -25,6 +25,7 @@ div.expItemDetails {
   align-items: end;
   flex-basis: 33%;
   text-align: right;
+  font-size: 19px;
 }
 
 div.expItemTitle {
@@ -33,3 +34,11 @@ div.expItemTitle {
     justify-content: center;
     align-items: left;
 }
+
+/* div.companyIcon {
+    width: "52px";
+    height: "52px";
+    border-radius: "4px";
+    margin-bottom: "4px";
+    transition: background-color 1.5s ease-in-out;
+} */

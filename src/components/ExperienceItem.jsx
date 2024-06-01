@@ -2,7 +2,7 @@ import { minHeight } from '@mui/system'
 import './Components.css'
 import CompanyIcon from './CompanyIcon'
 
-export default function ExperienceItem({imgSrc, alt, name, title, period, location, desc, bottomPadding=3, mb=2, mt=3}) {
+export default function ExperienceItem({iconStyling, imgSrc, alt, name, title, period, location, desc, bottomPadding=3, mb=2, mt=3}) {
     return (
     <div>
         <div className="expItem">
@@ -11,7 +11,7 @@ export default function ExperienceItem({imgSrc, alt, name, title, period, locati
                 gap: `15px`,
                 flexBasis: `66%`
             }}>
-                <CompanyIcon imgSrc={imgSrc} alt={alt} />
+                <CompanyIcon imgSrc={imgSrc} alt={alt} styling={iconStyling}/>
                 <div className="expItemTitle">
                     <h4>{name}</h4>
                     <h5>{title}</h5>
