@@ -43,10 +43,10 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                     })
 
                     setIconStyling({ 
-                        width: "52px",
-                        height: "52px",
+                        width: "51px",
+                        height: "51px",
                         borderRadius: "4px",
-                        marginBottom: "4px",
+                        marginBottom: "6px",
                         opacity: 1, 
                         transition: "opacity 1.75s ease-in-out" 
                     })
@@ -109,7 +109,7 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                                         name="Refer Me"
                                         title="Software Engineering Intern"
                                         period="Feb. 2024 – Apr. 2024"
-                                        location="(Remote) Seattle, WA"
+                                        location={`(Remote) Seattle, WA`}
                                         desc="Engineered job scraper with bs4/Selenium, utilizing instructor & Pydantic to extract JSON via OpenAI's API. Reduced scraper API costs by 10^3% ($0.01 to $0.0005/call) via chunking inputs and model downgrades while holding 98% accuracy."
                                         iconStyling={iconStyling}
                                     />

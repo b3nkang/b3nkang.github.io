@@ -13,13 +13,18 @@ export default function ExperienceItem({iconStyling, imgSrc, alt, name, title, p
             }}>
                 <CompanyIcon imgSrc={imgSrc} alt={alt} styling={iconStyling}/>
                 <div className="expItemTitle">
-                    <h4>{name}</h4>
+                    <h4 style={{
+                        lineHeight: 0.9,
+                        marginBottom: `2px`
+                    }}>
+                        {name}
+                    </h4>
                     <h5>{title}</h5>
                 </div>
             </div>
             <div className="expItemDetails">
-                <div>{period}</div>
-                <div style={{fontFamily: 'canela-dlightitalic'}}>{location}</div>
+                <div style={{ lineHeight: '0.95' }}>{period}</div>
+                <div style={{ lineHeight: '0.95', fontFamily: 'canela-dlightitalic' }}>{location}</div>
             </div>
         </div>
         <div style={{marginTop: `2vh`, paddingLeft: '0vw'}}>{desc}</div>
