@@ -13,7 +13,7 @@ function App({ titlecardSpacerHeight }) {
 
   return (
     <div className='overallContainer'>
-      <Spacer height={titlecardSpacerHeight + 40} color={transpWhite} zindex={998} />
+      <Spacer height={`${titlecardSpacerHeight + 40}px`} color={transpWhite} zindex={998} />
       {/* <BWGradient spacerHeight={5} indexMod={1} /> */}
       <BWGradientWave nextSectionRef={waveEndRef} spacerHeight={462} indexMod={1} />
       {/* <BWGradientWave 
@@ -24,9 +24,8 @@ function App({ titlecardSpacerHeight }) {
         // svgPath="M0,64L30,101.3C60,139,120,213,180,213.3C240,213,300,139,360,144C420,149,480,235,540,229.3C600,224,660,128,720,117.3C780,107,840,181,900,213.3C960,245,1020,235,1080,218.7C1140,203,1200,181,1260,160C1320,139,1380,117,1410,106.7L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
         svgPath="M0,96L30,128C60,160,120,224,180,218.7C240,213,300,139,360,112C420,85,480,107,540,122.7C600,139,660,149,720,138.7C780,128,840,96,900,90.7C960,85,1020,107,1080,133.3C1140,160,1200,192,1260,181.3C1320,171,1380,117,1410,90.7L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
       /> */}
+      <Spacer height={"10vh"} color={bwgrad20} zindex={1002} />
       <Experience nextSectionRef={waveEndRef} />
-      <Education />
-      <Education />
     </div>
   )
 }

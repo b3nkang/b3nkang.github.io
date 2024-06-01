@@ -22,8 +22,8 @@ div.fixerRef {
   min-height: 100vh;
   background-color: black;
   position: relative;
-  /* margin: 20vh 0 0 0; */
-  padding: 4vh 5vw 0 5vw;
+  /* margin: 0vh 0 5vh 0; */
+  padding: 4vh 5vw 5vh 5vw;
  }
 
  div.expPanel {

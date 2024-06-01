@@ -32,7 +32,8 @@ export default function BWGradientWave({nextSectionRef, svgPath="M -1680 312 C -
                                 style={
                                     {
                                         backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})`,
-                                        minHeight: `0px`,
+                                        minHeight: `100px`,
+                                        marginTop: "-80px"
                                     }
                                 }
                             >
