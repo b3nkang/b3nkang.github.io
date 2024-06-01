@@ -11,7 +11,14 @@ export default function CompanyIcon({imgSrc, alt, styling}) {
                 src={imgSrc}
                 alt={alt}
                 className="companyIcon"
-                style={styling}
+                style={{
+                    width: "51px",
+                    height: "51px",
+                    borderRadius: "4px",
+                    marginBottom: "6px",
+                    transition: "opacity 1.75s ease-in-out",
+                    ...styling
+                }}
             />
         </div>
     )

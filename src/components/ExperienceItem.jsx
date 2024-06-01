@@ -2,7 +2,7 @@ import { minHeight } from '@mui/system'
 import './Components.css'
 import CompanyIcon from './CompanyIcon'
 
-export default function ExperienceItem({iconStyling, imgSrc, alt, name, title, period, location, desc, bottomPadding=3, mb=2, mt=3}) {
+export default function ExperienceItem({iconStyling, imgSrc, alt, name, title, period, location, desc, bottomPadding=1, mb=3.5, mt=3}) {
     return (
     <div>
         <div className="expItem">
@@ -27,7 +27,7 @@ export default function ExperienceItem({iconStyling, imgSrc, alt, name, title, p
                 <div style={{ lineHeight: '0.95', fontFamily: 'canela-dlightitalic' }}>{location}</div>
             </div>
         </div>
-        <div style={{marginTop: `2vh`, paddingLeft: '0vw'}}>{desc}</div>
+        <div style={{marginTop: `1.5vh`, paddingLeft: '0vw'}}>{desc}</div>
         <div style={{
             display: 'flex',
             flexDirection: 'column',
@@ -36,10 +36,12 @@ export default function ExperienceItem({iconStyling, imgSrc, alt, name, title, p
         }}>
             <div style={{
                 minHeight: `${bottomPadding}px`,
-                backgroundColor: 'rgb(0,0,0)',
+                backgroundColor: 'rgb(200,200,200)',
                 borderRadius: 20,
                 margin: `${mt}vh 0 ${mb}vh 0`,
-                width: "50px"
+                width: "100%",
+                transition: "opacity 1.75s ease-in-out",
+                ...iconStyling
             }}>
             </div>
         </div>
