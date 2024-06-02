@@ -6,6 +6,7 @@ import BWGradient from './components/BWGradient'
 import BWGradientWave from './components/BWGradientWave'
 import Experience from './Experience'
 import { red, green, transpWhite, bwgrad1, bwgrad2, bwgrad3, bwgrad4, bwgrad5, bwgrad6, bwgrad7, bwgrad8, bwgrad9, bwgrad10, bwgrad11, bwgrad12, bwgrad13, bwgrad14, bwgrad15, bwgrad16, bwgrad17, bwgrad18, bwgrad19, bwgrad20 } from './utils/ColorProps';
+import Footer from './Footer'
 
 function App({ titlecardSpacerHeight }) {
 
@@ -50,7 +51,7 @@ function App({ titlecardSpacerHeight }) {
           spacerWaveClassMinHeight={0}
         />
       </div>
-      <Spacer color={green} height="40vh" marginTop={-30} />
+      <Footer />
     </div>
   )
 }
