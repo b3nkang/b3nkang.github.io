@@ -33,7 +33,7 @@ export default function BWGradientWave({overallGradStyling, nextSectionRef, svgP
                                     {
                                         backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})`,
                                         minHeight: `100px`,
-                                        marginTop: "-80px"
+                                        // marginTop: "-80px"
                                     }
                                 }
                             >
