@@ -146,3 +146,17 @@ export const bwgrad20 = {
   b: 0,
   a: 1.0,
 };
+
+export const red = {
+  r: 255,
+  g: 0,
+  b: 0,
+  a: 1.0,
+};
+
+export const green = {
+  r: 0,
+  g: 255,
+  b: 0,
+  a: 1.0,
+};
