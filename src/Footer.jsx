@@ -24,9 +24,9 @@ export default function Footer() {
                 display: "flex",
                 gap: "20px"
             }}>
-                <div>email: <a className="contact" href="mailto: ben_kang@brown.edu">ben_kang@brown.edu</a></div>
-                <div>github: <a className="contact" href="github.com/b3nkang">b3nkang</a></div>
-                <div>linkedin: <a className="contact" href="linkedin.com/in/b3nkang">in/b3nkang</a></div>
+                <div>email: <a className="contact" href="mailto: ben_kang@brown.edu"target="_blank" rel="noopener noreferrer">ben_kang@brown.edu</a></div>
+                <div>github: <a className="contact" href="https://github.com/b3nkang"target="_blank" rel="noopener noreferrer">b3nkang</a></div>
+                <div>linkedin: <a className="contact" href="https://linkedin.com/in/b3nkang" target="_blank" rel="noopener noreferrer">in/b3nkang</a></div>
             </div>
             </div>
         </div>
