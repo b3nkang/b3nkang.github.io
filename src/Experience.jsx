@@ -76,7 +76,7 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
     }, [])
 
     return(
-        <div className="panelEd" style={divStyling}>
+        <div className="panelEd" style={{ zIndex:"2000", ...divStyling}}>
             <div className={`expPanel`} style={refStyling}>
                 <div className="wave0" style={wave0Styling}>
                     <div className="wave1" style={wave1Styling}>
