@@ -2,7 +2,19 @@ import { minHeight } from '@mui/system'
 import './Components.css'
 import CompanyIcon from './CompanyIcon'
 
-export default function ExperienceItem({iconStyling, imgSrc, alt, name, title, period, location, desc, bottomPadding=1, mb=3.5, mt=3}) {
+export default function ExperienceItem({
+    iconStyling, 
+    imgSrc, 
+    alt, 
+    name, 
+    title, 
+    period, 
+    location, 
+    desc, 
+    bottomPadding=1, 
+    mb=3.5, 
+    mt=3
+}) {
     return (
     <div>
         <div className="expItem">

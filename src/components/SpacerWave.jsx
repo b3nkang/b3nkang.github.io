@@ -1,6 +1,10 @@
 import zIndex from "@mui/material/styles/zIndex"
 
-export default function SpacerWave({color, height, text}) {
+export default function SpacerWave({
+    color, 
+    height, 
+    text
+}) {
     const spacerStyling = {
         backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})`,
         minHeight: `${height}px`,

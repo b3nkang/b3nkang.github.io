@@ -1,4 +1,11 @@
-export default function Spacer({color, height, text, zindex, marginTop=0, marginBottom=0}) {
+export default function Spacer({
+    color, 
+    height, 
+    text, 
+    zindex, 
+    marginTop=0, 
+    marginBottom=0
+}) {
     const spacerStyling = {
         backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})`,
         minHeight: `${height}`,

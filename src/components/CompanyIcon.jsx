@@ -1,4 +1,8 @@
-export default function CompanyIcon({imgSrc, alt, styling}) {
+export default function CompanyIcon({
+    imgSrc, 
+    alt, 
+    styling
+}) {
     return (
         <div className="" style={{
             minHeight: `100%`,
