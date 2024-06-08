@@ -48,43 +48,6 @@ export default function EducationItem({
             </div>
         </div>
         <div style={{marginTop: `1.5vh`, paddingLeft: '0vw'}}>{desc}</div>
-
-        { /* <div style={{ display: "flex", gap: "11px", alignItems: "center",flexGrow: 1}}>
-            <CompanyIcon imgSrc={imgSrc} alt={alt} styling={{marginBottom: "20px", ...iconStyling}}/>
-            <div style={{ flexGrow: 1}}>
-                <h4 style={{
-                        lineHeight: 0.9,
-                        marginTop: `3px`,
-                        marginBottom: `2px`,
-                        fontSize: `1.75em`,
-                        fontFamily: 'canela-dregular'
-                    }}>
-                        {name}
-                </h4>
-                <div className="expItem">
-                    <div style={{
-                        display: "flex",
-                        gap: `15px`,
-                        flexBasis: `60%`
-                    }}>
-                        <div className="eduItemTitle">
-                            <h5 style={{
-                                fontFamily: 'canela-dlight',
-                                fontWeight: '100',
-                            }}>
-                                {title}
-                            </h5>
-                        </div>
-                    </div>
-                    <div className="eduItemDetails" style={{ flexBasis: "40%"}}>
-                        <div style={{ lineHeight: '0.95' }}>{period}</div>
-                        <div style={{ lineHeight: '0.95', fontFamily: 'canela-dlightitalic' }}>{location}</div>
-                    </div>
-                </div>
-                <div style={{marginTop: `1.5vh`, paddingLeft: '0vw'}}>{desc}</div>
-            </div>
-        </div> */}
-
         <div style={{
             display: 'flex',
             flexDirection: 'column',
