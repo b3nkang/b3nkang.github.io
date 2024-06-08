@@ -19,7 +19,7 @@ export default function Footer() {
                 gap: "10px",
                 alignItems: 'center',
             }}>
-            <div style={{marginRight:"3vw"}}>last updated may 2024</div>
+            <div style={{marginRight:"3vw"}}>last updated june 2024</div>
             <div style={{
                 display: "flex",
                 gap: "20px"
