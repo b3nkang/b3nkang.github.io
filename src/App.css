@@ -18,23 +18,27 @@ div.fixerRef {
 
 /* experience */
 div.panelEd  {
-  min-width: 72vw;
+  min-width: 100%;
   /* min-height: 100vh; */
   background-color: black;
   position: relative;
   /* margin: 0vh 0 5vh 0; */
-  padding: 4vh 5vw 5vh 5vw;
+  padding: 4vh 0vw 5vh 0vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 div.expPanel {
-  min-width: 65vw;
+  width: 80%;
   /* min-height: 50vh; */
-  /* padding: 2vh 2vw; */
   padding: 20px;
   transition: background-color 0.15s ease-in-out;
-  border-radius: 2vw;
+  border-radius: 20px;
   /* box-shadow: 0px 0px 10px 100px rgba(255, 255, 255, 1.0); */
   z-index: 1000;
+    margin: 4vh 5vw 5vh 5vw;
 }
 
 div.wave0 {
@@ -42,7 +46,7 @@ div.wave0 {
   /* background-color: rgb(47,47,47); */
   border-radius: 20px;
   z-index: 1000;
-  min-width: 55vw;
+  width: auto;
   /* min-height: 50vh; */
   transition: background-color 0.45s ease-in-out;
 }
@@ -53,7 +57,7 @@ div.wave1 {
   /* background-color: rgb(80,80,80); */
   border-radius: 20px;
   z-index: 1000;
-  min-width: 50vw;
+  width: auto;
   /* min-height: 50vh; */
   transition: background-color 0.65s ease-in-out;
 }
@@ -63,7 +67,7 @@ div.wave2 {
   /* background-color: rgb(120,120,120); */
   border-radius: 20px;
   z-index: 1000;
-  min-width: 49vw;
+  width: auto;
   /* min-height: 50vh; */
   transition: background-color 0.85s ease-in-out;
 }
@@ -73,7 +77,7 @@ div.wave3 {
   /* background-color: rgb(177, 177, 177); */
   border-radius: 20px;
   z-index: 1000;
-  min-width: 43vw;
+  width: auto;
   /* min-height: 50vh; */
   transition: background-color 1.25s ease-in-out;
 }
@@ -83,12 +87,12 @@ div.wave4 {
   /* background-color: rgb(255,255,255); */
   border-radius: 20px;
   z-index: 1000;
-  min-width: 37vw;
+  width: auto;
   /* min-height: 50vh; */
   transition: background-color 1.5s ease-in-out;
 }
 
 div.expCont {
   text-align: center;
-  margin: 20px 0;
+  margin: 35px 0 14px 0;
 }
