@@ -62,3 +62,16 @@ div.eduItemDetails {
   font-size: 19px;
   gap: 6px;
 }
+
+div.eduItemTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+div.eduItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 0px;
+}
