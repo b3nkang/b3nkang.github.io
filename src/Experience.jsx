@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import './App.css'
 import ExperienceItem from "./components/ExperienceItem"
+import EducationItem from "./components/EducationItem"
 
 function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
     // const divStyling = {
@@ -82,6 +83,42 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                     <div className="wave1" style={wave1Styling}>
                         <div className="wave2" style={wave2Styling}>
                             <div className="wave3" style={wave3Styling}>
+                                <div style={{ display: "flex", justifyContent: "space-evenly", gap: "20px"}}>
+                                    <div style={{ flexGrow: 1 }}>
+                                        <div className="expCont"><h2>education</h2></div>
+                                        <div className="wave4" style={{ paddingTop: "2.15vw", ...wave4Styling}}>
+                                            <EducationItem
+                                                imgSrc={"/src/assets/images/brown_university_logo.jpeg"} 
+                                                alt={"Brown University logo"}
+                                                name="Brown University"
+                                                title="Sc.B. in Computer Science — GPA: 3.86"
+                                                period="9/2023 - 5/2026"
+                                                location="Providence, RI"
+                                                iconStyling={iconStyling}
+                                                mt={0.8}
+                                                mb={3}
+                                            />
+                                            <EducationItem
+                                                imgSrc={"/src/assets/images/new_york_university_logo.jpeg"} 
+                                                alt={"New York University logo"}
+                                                name="New York University"
+                                                title="Presidential Honors Scholar — GPA: 3.92"
+                                                period="9/2022 - 5/2023"
+                                                location="New York, NY"
+                                                bottomPadding={0}
+                                                mt={0.5}
+                                                mb={0}
+                                                iconStyling={iconStyling}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div style={{ flexGrow: 1 }}>
+                                        <div className="expCont"><h2>technical skills</h2></div>
+                                        <div className="wave4" style={{ padding: "2.15vw", ...wave4Styling}}>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div className="expCont"><h2>past experience</h2></div>
                                 <div className="wave4" style={wave4Styling}>
                                     <ExperienceItem
@@ -91,7 +128,7 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                                         title="Software Engineering Intern"
                                         period="Jun. 2024 – Aug. 2024"
                                         location="Cambridge, MA"
-                                        desc="Incoming for summer 2024, working on healthcare analytics with React, Bootstrap, and SCSS."
+                                        desc="Incoming for summer 2024, working on applications team with MongoDB, React, Zod (data validation), Zustand (state manager), and TypeScript. Developing tRPC protocol routes and data modelling for seeding MongoDB instances."
                                         iconStyling={iconStyling}
                                     />
                                     <ExperienceItem 
