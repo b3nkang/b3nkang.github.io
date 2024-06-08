@@ -21,7 +21,7 @@ export default function EducationItem({
             <div style={{
                 display: "flex",
                 gap: `15px`,
-                flexBasis: `50%`
+                flexBasis: `60%`
             }}>
                 <CompanyIcon imgSrc={imgSrc} alt={alt} styling={iconStyling}/>
                 <div className="eduItemTitle">
@@ -42,7 +42,7 @@ export default function EducationItem({
                     </h5>
                 </div>
             </div>
-            <div className="eduItemDetails" style={{ flexBasis: "50%"}}>
+            <div className="eduItemDetails" style={{ flexBasis: "40%"}}>
                 <div style={{ lineHeight: '0.95' }}>{period}</div>
                 <div style={{ lineHeight: '0.95', fontFamily: 'canela-dlightitalic' }}>{location}</div>
             </div>
