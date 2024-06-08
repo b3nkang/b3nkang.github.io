@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import './App.css'
 import ExperienceItem from "./components/ExperienceItem"
 import EducationItem from "./components/EducationItem"
+import LanguageButton from "./components/LanguageButton"
 
 function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
     // const divStyling = {
@@ -84,43 +85,168 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                         <div className="wave2" style={wave2Styling}>
                             <div className="wave3" style={wave3Styling}>
                                 <div style={{ display: "flex", justifyContent: "space-evenly", gap: "20px"}}>
-                                    <div style={{ flexGrow: 1 }}>
-                                        <div className="expCont"><h2>education</h2></div>
-                                        <div className="wave4" style={{ paddingTop: "2.15vw", ...wave4Styling}}>
-                                            <EducationItem
-                                                imgSrc={"/src/assets/images/brown_university_logo.jpeg"} 
-                                                alt={"Brown University logo"}
-                                                name="Brown University"
-                                                title="Sc.B. in Computer Science — GPA: 3.86"
-                                                period="9/2023 - 5/2026"
-                                                location="Providence, RI"
-                                                iconStyling={iconStyling}
-                                                mt={0.8}
-                                                mb={3}
-                                            />
-                                            <EducationItem
-                                                imgSrc={"/src/assets/images/new_york_university_logo.jpeg"} 
-                                                alt={"New York University logo"}
-                                                name="New York University"
-                                                title="Presidential Honors Scholar — GPA: 3.92"
-                                                period="9/2022 - 5/2023"
-                                                location="New York, NY"
-                                                bottomPadding={0}
-                                                mt={0.5}
-                                                mb={0}
-                                                iconStyling={iconStyling}
-                                            />
+                                    <div style={{ flexGrow: 1, flexBasis: "40%", display: "flex", flexDirection: 'column', justifyContent: "space-between" }}>
+                                        <div>
+                                            <div className="expCont"  style={{ display: "flex", justifyContent: "start", paddingLeft: "20px"}}><h2>education</h2></div>
+                                            <div className="wave4" style={{ paddingTop: "2.15vw", ...wave4Styling}}>
+                                                <EducationItem
+                                                    imgSrc={"/src/assets/images/brown_university_logo.jpeg"}
+                                                    alt={"Brown University logo"}
+                                                    name="Brown University"
+                                                    title="Sc.B. in Computer Science"
+                                                    period="9/2023 - 5/2026"
+                                                    location="GPA: 3.86"
+                                                    iconStyling={iconStyling}
+                                                    mt={0.93}
+                                                    mb={3}
+                                                />
+                                                <EducationItem
+                                                    imgSrc={"/src/assets/images/new_york_university_logo.jpeg"}
+                                                    alt={"New York University logo"}
+                                                    name="New York University"
+                                                    title="Presidential Honors Scholar"
+                                                    period="9/2022 - 5/2023"
+                                                    location="GPA: 3.92"
+                                                    bottomPadding={0}
+                                                    mt={0.5}
+                                                    mb={0}
+                                                    iconStyling={iconStyling}
+                                                />
+                                            </div>
+                                        </div>
+                                        <div style={{
+                                            display: "flex",
+                                            justifyContent: "start",
+                                            alignItems: "end",
+                                        }}>
+                                            <div className="expCont" style={{marginBottom: "-10px", paddingLeft: "20px"}}><h2>experience</h2></div>
                                         </div>
                                     </div>
-                                    <div style={{ flexGrow: 1 }}>
-                                        <div className="expCont"><h2>technical skills</h2></div>
-                                        <div className="wave4" style={{ padding: "2.15vw", ...wave4Styling}}>
+                                    {/* <div style={{ flexGrow: 1, flexBasis: "60%"}}>
+                                        <div className="expCont"  style={{ display: "flex", justifyContent: "start", paddingLeft: "20px"}}><h2>skills</h2></div>
+                                        <div className="wave4" style={{ padding: "2.15vw", display: "flex", flexDirection: "column", flexGrow: 1, height: "auto", ...wave4Styling}}>  */} 
+                                    <div style={{ flexGrow: 1, flexBasis: "60%", display: "flex", flexDirection: "column" }}>
+                                        <div className="expCont"  style={{ display: "flex", justifyContent: "start", paddingLeft: "20px"}}><h2>skills</h2></div>
+                                        <div className="wave4" style={{ padding: "2.15vw", display: "flex", flexDirection: "column", flexGrow: 1, ...wave4Styling}}> 
+
+                                            <div style={{
+                                                width: "auto",
+                                                display: "flex",
+                                                flexDirection: "column",
+                                                justifyContent: "center",
+                                                alignItems: "start",
+                                                gap: "10px",
+                                                marginBottom: "15px"
+                                            }}>
+                                                <div style={{
+                                                    flexGrow: 1,
+                                                    flexBasis: "30%",
+                                                    fontFamily: "canela-dregular",
+                                                    fontSize: "20px",
+                                                    padding: "5px 5px 3px 0px",
+                                                }}>
+                                                    Languages:
+                                                </div>
+                                                <div style={{                                                 
+                                                    width: "auto",
+                                                    display: "flex",
+                                                    justifyContent: "start",
+                                                    alignItems: "start",
+                                                    gap: "6px",
+                                                    flexWrap: "wrap",
+                                                    flexBasis: "70%"
+                                                }}>
+                                                    <LanguageButton text="Python" iconStyling={iconStyling} />
+                                                    <LanguageButton text="Java" iconStyling={iconStyling} />
+                                                    <LanguageButton text="JavaScript" iconStyling={iconStyling} />
+                                                    <LanguageButton text="TypeScript" iconStyling={iconStyling} />
+                                                    <LanguageButton text="HTML" iconStyling={iconStyling} />
+                                                    <LanguageButton text="CSS" iconStyling={iconStyling} />
+                                                </div>
+                                            </div>
+                                            <div style={{
+                                                width: "auto",
+                                                display: "flex",
+                                                flexDirection: "column",
+                                                justifyContent: "center",
+                                                alignItems: "start",
+                                                gap: "10px",
+                                                marginBottom: "15px"
+                                            }}>
+                                                <div style={{
+                                                    flexGrow: 1,
+                                                    flexBasis: "30%",
+                                                    fontFamily: "canela-dregular",
+                                                    fontSize: "20px",
+                                                    padding: "5px 5px 3px 0px",
+                                                    lineHeight: 1
+                                                }}>
+                                                    Frameworks:
+                                                </div>
+                                                <div style={{                                                 
+                                                    width: "auto",
+                                                    display: "flex",
+                                                    justifyContent: "start",
+                                                    alignItems: "start",
+                                                    gap: "6px",
+                                                    flexWrap: "wrap",
+                                                    flexBasis: "70%"
+                                                }}>
+                                                    <LanguageButton text="React" iconStyling={iconStyling} />
+                                                    <LanguageButton text="Vite" iconStyling={iconStyling} />
+                                                    <LanguageButton text="Next.js" iconStyling={iconStyling} />
+                                                    <LanguageButton text="Tailwind" iconStyling={iconStyling} />
+                                                    <LanguageButton text="Express.js" iconStyling={iconStyling} />
+                                                    <LanguageButton text="Flask" iconStyling={iconStyling} />
+                                                    <LanguageButton text="Selenium" iconStyling={iconStyling} />
+                                                    <LanguageButton text="Pytest" iconStyling={iconStyling} />
+                                                    <LanguageButton text="JUnit" iconStyling={iconStyling} />
+                                                    <LanguageButton text="Playwright" iconStyling={iconStyling} />
+                                                </div>
+                                            </div>
+                                            <div style={{
+                                                width: "auto",
+                                                display: "flex",
+                                                flexDirection: "column",
+                                                justifyContent: "center",
+                                                alignItems: "start",
+                                                gap: "10px",
+                                            }}>
+                                                <div style={{
+                                                    flexGrow: 1,
+                                                    flexBasis: "30%",
+                                                    fontFamily: "canela-dregular",
+                                                    fontSize: "20px",
+                                                    padding: "5px 5px 3px 0px",
+                                                    lineHeight: 1
+                                                }}>
+                                                    Dev Tools:
+                                                </div>
+                                                <div style={{                                                 
+                                                    width: "auto",
+                                                    display: "flex",
+                                                    justifyContent: "start",
+                                                    alignItems: "start",
+                                                    gap: "6px",
+                                                    flexWrap: "wrap",
+                                                    flexBasis: "70%"
+                                                }}>
+                                                    <LanguageButton text="MongoDB" iconStyling={iconStyling} />
+                                                    <LanguageButton text="Firestore" iconStyling={iconStyling} />
+                                                    <LanguageButton text="GCP" iconStyling={iconStyling} />
+                                                    <LanguageButton text="Zod" iconStyling={iconStyling} />
+                                                    <LanguageButton text="Zustand" iconStyling={iconStyling} />
+                                                    <LanguageButton text="tRPC" iconStyling={iconStyling} />
+                                                    <LanguageButton text="Git" iconStyling={iconStyling} />
+                                                    <LanguageButton text="VS Code" iconStyling={iconStyling} />
+                                                    <LanguageButton text="IntelliJ" iconStyling={iconStyling} />                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className="expCont"><h2>past experience</h2></div>
-                                <div className="wave4" style={wave4Styling}>
+                                {/* <div className="expCont"><h2>past experience</h2></div> */}
+                                <div className="wave4" style={{ marginTop: "20px", ...wave4Styling}}>
                                     <ExperienceItem
                                         imgSrc={"/src/assets/images/intus_care_logo.jpeg"} 
                                         alt={"Intus Care logo"}
