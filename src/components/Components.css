@@ -43,3 +43,22 @@ div.expItemTitle {
     margin-bottom: "4px";
     transition: background-color 1.5s ease-in-out;
 } */
+
+/* education */
+
+div.eduItem {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1px;
+}
+
+div.eduItemDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  flex-basis: 40%;
+  text-align: right;
+  font-size: 19px;
+  gap: 6px;
+}
