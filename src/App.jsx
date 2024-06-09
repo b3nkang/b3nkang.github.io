@@ -1,12 +1,10 @@
 import { useState, useRef, useEffect } from 'react'
 import './App.css'
-import Education from './Education'
 import Spacer from './components/Spacer'
-import BWGradient from './components/BWGradient'
 import BWGradientWave from './components/BWGradientWave'
-import Experience from './Experience'
 import { red, green, transpWhite, bwgrad1, bwgrad2, bwgrad3, bwgrad4, bwgrad5, bwgrad6, bwgrad7, bwgrad8, bwgrad9, bwgrad10, bwgrad11, bwgrad12, bwgrad13, bwgrad14, bwgrad15, bwgrad16, bwgrad17, bwgrad18, bwgrad19, bwgrad20 } from './utils/ColorProps';
-import Footer from './Footer'
+import Footer from './Footer';
+import MainCard from './MainCard'
 
 function App({ titlecardSpacerHeight }) {
 
@@ -29,7 +27,7 @@ function App({ titlecardSpacerHeight }) {
       {/* <BWGradient spacerHeight={5} indexMod={1} /> */}
       <BWGradientWave nextSectionRef={waveEndRef} spacerHeight={462} indexMod={1} />
       <Spacer height={"0vh"} color={bwgrad20} zindex={1002} />
-      <Experience nextSectionRef={waveEndRef} />
+      <MainCard nextSectionRef={waveEndRef} />
       <div style={{
         // height: "100%",
         // width: "100%",
