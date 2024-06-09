@@ -4,11 +4,9 @@ import Education from "./Education"
 import Experience from "./Experience"
 import Skills from "./Skills"
 import WaveSquare from "./components/WaveSquare"
+import HeaderTypography from "./components/HeaderTypography"
 
 export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
-    // const divStyling = {
-    //     backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})`,
-    // }
     const [divStyling, setDivStyling] = useState({ 
         backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})`,
         position: `relative`
@@ -91,7 +89,9 @@ export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}})
                                 <div style={{ display: "flex", justifyContent: "space-evenly", gap: "20px", paddingTop: "10px"}}>
                                     <div style={{ flexGrow: 1, flexBasis: "50%", display: "flex", flexDirection: 'column', justifyContent: "space-between" }}>
                                         <div>
-                                            <div className="expCont"  style={{ display: "flex", justifyContent: "start", paddingLeft: "15px"}}><h2>education</h2></div>
+                                            <HeaderTypography headerClass="expCont" pl={15}>
+                                                education
+                                            </HeaderTypography>
                                             <Education iconStyling={iconStyling} waveStyling={wave4Styling} />
                                         </div>
                                         <div style={{
@@ -99,11 +99,15 @@ export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}})
                                             justifyContent: "start",
                                             alignItems: "end",
                                         }}>
-                                            <div className="expCont" style={{marginBottom: "-10px", paddingLeft: "15px"}}><h2>experience</h2></div>
+                                            <HeaderTypography headerClass="expCont" pl={15} mb={-10}>
+                                                experience
+                                            </HeaderTypography>
                                         </div>
                                     </div>
                                     <div style={{ flexGrow: 1, flexBasis: "50%", display: "flex", flexDirection: "column" }}>
-                                        <div className="expCont"  style={{ display: "flex", justifyContent: "start", paddingLeft: "10px"}}><h2>skills</h2></div>
+                                        <HeaderTypography headerClass="expCont" pl={10}>
+                                            skills
+                                        </HeaderTypography>
                                         <Skills iconStyling={iconStyling} waveStyling={wave4Styling} />
                                     </div>
                                 </div>
@@ -117,5 +121,3 @@ export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}})
         </WaveSquare>
     )
 }
-
-// export default Experience;
