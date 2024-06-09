@@ -5,6 +5,7 @@ import EducationItem from "./components/EducationItem"
 import LanguageButton from "./components/LanguageButton"
 import Skills from "./Skills"
 import Education from "./Education"
+import WaveSquare from "./components/WaveSquare"
 
 function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
     // const divStyling = {
@@ -79,13 +80,16 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
         };
     }, [])
 
+    const waveClassArray = ["wave0", "wave1", "wave2", "wave3"]
+    const waveStyleArray = [wave0Styling, wave1Styling, wave2Styling, wave3Styling]
+
     return(
-        <div className="panelEd" style={{ zIndex:"2000", ...divStyling}}>
-            <div className={`expPanel`} style={refStyling}>
-                <div className="wave0" style={wave0Styling}>
-                    <div className="wave1" style={wave1Styling}>
-                        <div className="wave2" style={wave2Styling}>
-                            <div className="wave3" style={wave3Styling}>
+        <WaveSquare waveClass="panelEd" waveStyle={{ zIndex:"2000", ...divStyling}}>
+            <WaveSquare waveClass="expPanel" waveStyle={refStyling}>
+                <WaveSquare waveClass="wave0" waveStyle={wave0Styling}>
+                    <WaveSquare waveClass="wave1" waveStyle={wave1Styling}>
+                        <WaveSquare waveClass="wave2" waveStyle={wave2Styling}>
+                            <WaveSquare waveClass="wave3" waveStyle={wave3Styling}>
                                 <div style={{ display: "flex", justifyContent: "space-evenly", gap: "20px", paddingTop: "10px"}}>
                                     <div style={{ flexGrow: 1, flexBasis: "50%", display: "flex", flexDirection: 'column', justifyContent: "space-between" }}>
                                         <div>
@@ -151,12 +155,12 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                                         iconStyling={iconStyling}
                                     />  
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                            </WaveSquare>
+                        </WaveSquare>
+                    </WaveSquare>
+                </WaveSquare>
+            </WaveSquare>
+        </WaveSquare>
     )
 }
 
