@@ -3,6 +3,7 @@ import './App.css'
 import ExperienceItem from "./components/ExperienceItem"
 import EducationItem from "./components/EducationItem"
 import LanguageButton from "./components/LanguageButton"
+import Skills from "./Skills"
 
 function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
     // const divStyling = {
@@ -85,7 +86,7 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                         <div className="wave2" style={wave2Styling}>
                             <div className="wave3" style={wave3Styling}>
                                 <div style={{ display: "flex", justifyContent: "space-evenly", gap: "20px", paddingTop: "10px"}}>
-                                    <div style={{ flexGrow: 1, flexBasis: "47%", display: "flex", flexDirection: 'column', justifyContent: "space-between" }}>
+                                    <div style={{ flexGrow: 1, flexBasis: "50%", display: "flex", flexDirection: 'column', justifyContent: "space-between" }}>
                                         <div>
                                             <div className="expCont"  style={{ display: "flex", justifyContent: "start", paddingLeft: "15px"}}><h2>education</h2></div>
                                             <div className="wave4" style={{   padding: "2.3vw 2.3vw 0.5vw 2.3vw", ...wave4Styling}}>
@@ -125,9 +126,10 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                                     {/* <div style={{ flexGrow: 1, flexBasis: "60%"}}>
                                         <div className="expCont"  style={{ display: "flex", justifyContent: "start", paddingLeft: "20px"}}><h2>skills</h2></div>
                                         <div className="wave4" style={{ padding: "2.15vw", display: "flex", flexDirection: "column", flexGrow: 1, height: "auto", ...wave4Styling}}>  */} 
-                                    <div style={{ flexGrow: 1, flexBasis: "53%", display: "flex", flexDirection: "column" }}>
+                                    <div style={{ flexGrow: 1, flexBasis: "50%", display: "flex", flexDirection: "column" }}>
                                         <div className="expCont"  style={{ display: "flex", justifyContent: "start", paddingLeft: "10px"}}><h2>skills</h2></div>
-                                        <div className="wave4" style={{ padding: "1.7vw 2.15vw 2.15vw 2.15vw", display: "flex", flexDirection: "column", flexGrow: 1, ...wave4Styling}}> 
+                                        <Skills iconStyling={iconStyling} waveStyling={wave4Styling} />
+                                        {/* <div className="wave4" style={{ padding: "1.7vw 2.15vw 2.15vw 2.15vw", display: "flex", flexDirection: "column", flexGrow: 1, ...wave4Styling}}> 
                                             <div style={{
                                                 width: "auto",
                                                 display: "flex",
@@ -239,9 +241,10 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                                                     <LanguageButton text="tRPC" iconStyling={iconStyling} />
                                                     <LanguageButton text="Git" iconStyling={iconStyling} />
                                                     <LanguageButton text="VS Code" iconStyling={iconStyling} />
-                                                    <LanguageButton text="IntelliJ" iconStyling={iconStyling} />                                                </div>
+                                                    <LanguageButton text="IntelliJ" iconStyling={iconStyling} />                                                
+                                                </div>
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
 
