@@ -11,9 +11,10 @@ function Experience({ iconStyling, waveStyling}) {
             title="Software Engineering Intern"
             period="Jun. 2024 – Aug. 2024"
             location="Cambridge, MA"
-            desc="Incoming for summer 2024, working on applications team with MongoDB, React, Zod (data validation), Zustand (state manager), and TypeScript. Developing tRPC protocol routes and data modelling for seeding MongoDB instances."
             iconStyling={iconStyling}
-        />
+        >
+            Incoming for summer 2024, working on applications team with <code>MongoDB</code>, <code>React</code>, <code>Zod</code> (data validation), <code>Zustand</code> (state manager), and <code>TypeScript</code>. Developing <code>tRPC</code> protocol routes and data modelling for seeding <code>MongoDB</code> instances.
+        </ExperienceItem>
         <ExperienceItem 
             imgSrc={"/src/assets/images/usereferme_logo.jpeg"} 
             alt={"Refer Me logo"}
@@ -21,9 +22,10 @@ function Experience({ iconStyling, waveStyling}) {
             title="Software Engineering Intern"
             period="Feb. 2024 – Apr. 2024"
             location={`(Remote) Seattle, WA`}
-            desc="Engineered job scraper with bs4/Selenium, utilizing instructor & Pydantic to extract JSON via OpenAI's API. Reduced scraper API costs by 10^3% ($0.01 to $0.0005/call) via chunking inputs and model downgrades while holding 98% accuracy."
             iconStyling={iconStyling}
-        />
+        >
+            Engineered job scraper with <code>bs4/Selenium</code>, utilizing <code>instructor</code> and <code>Pydantic</code> to extract JSON via OpenAI's API. Reduced scraper API costs by 10<sup>3</sup>% ($0.01 to $0.0005/call) via chunking inputs and model downgrades while holding 98% accuracy.
+        </ExperienceItem>
         <ExperienceItem 
             imgSrc={"/src/assets/images/letsift_logo.jpeg"} 
             alt={"Sift logo"}
@@ -31,9 +33,10 @@ function Experience({ iconStyling, waveStyling}) {
             title="Software Engineering Intern"
             period="Nov. 2023 – Jan. 2024"
             location="Providence, RI"
-            desc="Led homepage migration to React/TypeScript/Next.js stack, deprecating thousands of lines of code. Optimized site performance with React Lazy Load, Next.js Image and server-side rendering to achieve Lighthouse SEO score of 100."
             iconStyling={iconStyling}
-        />
+        >
+            Led homepage migration to <code>React/TypeScript/Next.js</code> stack, deprecating thousands of lines of code. Optimized site performance with React Lazy Load, Next.js Image and server-side rendering to achieve Lighthouse SEO score of 100."
+        </ExperienceItem>
         <ExperienceItem
             imgSrc={"/src/assets/images/cims_logo.jpeg"} 
             alt={"NYU Courant logo"}
@@ -41,12 +44,13 @@ function Experience({ iconStyling, waveStyling}) {
             title="Visiting Researcher, NYU Courant"
             period="June 2023 – Oct. 2023"
             location="New York, NY"
-            desc="Built world’s largest corpus of queryable LENR research on AI & Low-Energy Nuclear Reactions (AI-LENR) team. Co-authored paper in IEEE ICBDA 2024 and was main contributor to LENRdashboard.com, built with D3.js, JS, HTML/CSS."
             bottomPadding={0}
             mt={4.5}
             mb={0}
             iconStyling={iconStyling}
-        />  
+        >
+            Built world’s largest corpus of queryable LENR research on AI & Low-Energy Nuclear Reactions (AI-LENR) team. Co-authored paper in IEEE ICBDA 2024 and was main contributor to LENRdashboard.com, built with <code>D3.js</code>, <code>JavaScript</code>, <code>HTML/CSS</code>.
+        </ExperienceItem>  
     </div>
     )
 }
