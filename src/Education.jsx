@@ -1,12 +1,33 @@
-function Education({color = {r:0,g:0,b:0,a:1.0,}}){
-    const divStyling = {
-        backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})`,
-    }
+import './App.css';
+import EducationItem from './components/EducationItem';
 
-    return(
-        <div className="panelEd" style={divStyling}>
-            <h1>TEST</h1>
-        </div>
+function Education({ iconStyling, waveStyling}) {
+    return (
+    <div className="wave4" style={{  padding: "2.3vw 2.3vw 0.5vw 2.3vw", ...waveStyling}}>
+        <EducationItem
+            imgSrc={"/src/assets/images/brown_university_logo.jpeg"}
+            alt={"Brown University logo"}
+            name="Brown University"
+            title="Sc.B. in Computer Science"
+            period="9/2023 - 5/2026"
+            location="GPA: 3.86"
+            iconStyling={iconStyling}
+            mt={0.93}
+            mb={3}
+        />
+        <EducationItem
+            imgSrc={"/src/assets/images/new_york_university_logo.jpeg"}
+            alt={"New York University logo"}
+            name="New York University"
+            title="Presidential Honors Scholar"
+            period="9/2022 - 5/2023"
+            location="GPA: 3.92"
+            bottomPadding={0}
+            mt={0.5}
+            mb={0.5}
+            iconStyling={iconStyling}
+        />
+    </div>
     )
 }
 
