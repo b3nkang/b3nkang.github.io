@@ -9,10 +9,10 @@ export default function ExperienceItem({
     title, 
     period, 
     location, 
-    desc, 
     bottomPadding=1, 
     mb=3.5, 
-    mt=3
+    mt=3,
+    children
 }) {
     return (
     <div>
@@ -38,7 +38,7 @@ export default function ExperienceItem({
                 <div style={{ lineHeight: '0.95', fontFamily: 'canela-dlightitalic' }}>{location}</div>
             </div>
         </div>
-        <div style={{marginTop: `1.5vh`, paddingLeft: '0vw'}}>{desc}</div>
+        <div style={{marginTop: `1.5vh`, paddingLeft: '0vw'}}>{children}</div>
         <div style={{
             display: 'flex',
             flexDirection: 'column',
