@@ -1,4 +1,3 @@
-import { minHeight } from '@mui/system'
 import './Components.css'
 import CompanyIcon from './CompanyIcon'
 
