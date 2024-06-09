@@ -14,6 +14,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+code {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0;
+  margin: 0;
+}
+
 h1 {
   font-size: 4.2em;
   line-height: 1.1;
