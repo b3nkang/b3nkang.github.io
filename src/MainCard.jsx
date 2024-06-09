@@ -5,6 +5,7 @@ import Experience from "./Experience"
 import Skills from "./Skills"
 import WaveSquare from "./components/WaveSquare"
 import HeaderTypography from "./components/HeaderTypography"
+import Flexbox from "./components/Flexbox"
 
 export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
     const [divStyling, setDivStyling] = useState({ 
@@ -86,31 +87,27 @@ export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}})
                     <WaveSquare waveClass="wave1" waveStyle={wave1Styling}>
                         <WaveSquare waveClass="wave2" waveStyle={wave2Styling}>
                             <WaveSquare waveClass="wave3" waveStyle={wave3Styling}>
-                                <div style={{ display: "flex", justifyContent: "space-evenly", gap: "20px", paddingTop: "10px"}}>
-                                    <div style={{ flexGrow: 1, flexBasis: "50%", display: "flex", flexDirection: 'column', justifyContent: "space-between" }}>
+                                <Flexbox justifyContent="space-evenly" gap={20} pt={10}>
+                                    <Flexbox fG={1} fB={50} fD="column" justifyContent="space-between">
                                         <div>
                                             <HeaderTypography headerClass="expCont" pl={15}>
                                                 education
                                             </HeaderTypography>
                                             <Education iconStyling={iconStyling} waveStyling={wave4Styling} />
                                         </div>
-                                        <div style={{
-                                            display: "flex",
-                                            justifyContent: "start",
-                                            alignItems: "end",
-                                        }}>
+                                        <Flexbox justifyContent="start" alignItems="start">
                                             <HeaderTypography headerClass="expCont" pl={15} mb={-10}>
                                                 experience
                                             </HeaderTypography>
-                                        </div>
-                                    </div>
-                                    <div style={{ flexGrow: 1, flexBasis: "50%", display: "flex", flexDirection: "column" }}>
+                                        </Flexbox>
+                                    </Flexbox>
+                                    <Flexbox fG={1} fB={50} fD="column">
                                         <HeaderTypography headerClass="expCont" pl={10}>
                                             skills
                                         </HeaderTypography>
                                         <Skills iconStyling={iconStyling} waveStyling={wave4Styling} />
-                                    </div>
-                                </div>
+                                    </Flexbox>
+                                </Flexbox>
                                 {/* <div className="expCont"><h2>past experience</h2></div> */}
                                 <Experience iconStyling={iconStyling} waveStyling={wave4Styling} />
                             </WaveSquare>
