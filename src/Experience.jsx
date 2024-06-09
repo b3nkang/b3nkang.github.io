@@ -4,6 +4,7 @@ import ExperienceItem from "./components/ExperienceItem"
 import EducationItem from "./components/EducationItem"
 import LanguageButton from "./components/LanguageButton"
 import Skills from "./Skills"
+import Education from "./Education"
 
 function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
     // const divStyling = {
@@ -89,31 +90,7 @@ function Experience({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
                                     <div style={{ flexGrow: 1, flexBasis: "50%", display: "flex", flexDirection: 'column', justifyContent: "space-between" }}>
                                         <div>
                                             <div className="expCont"  style={{ display: "flex", justifyContent: "start", paddingLeft: "15px"}}><h2>education</h2></div>
-                                            <div className="wave4" style={{   padding: "2.3vw 2.3vw 0.5vw 2.3vw", ...wave4Styling}}>
-                                                <EducationItem
-                                                    imgSrc={"/src/assets/images/brown_university_logo.jpeg"}
-                                                    alt={"Brown University logo"}
-                                                    name="Brown University"
-                                                    title="Sc.B. in Computer Science"
-                                                    period="9/2023 - 5/2026"
-                                                    location="GPA: 3.86"
-                                                    iconStyling={iconStyling}
-                                                    mt={0.93}
-                                                    mb={3}
-                                                />
-                                                <EducationItem
-                                                    imgSrc={"/src/assets/images/new_york_university_logo.jpeg"}
-                                                    alt={"New York University logo"}
-                                                    name="New York University"
-                                                    title="Presidential Honors Scholar"
-                                                    period="9/2022 - 5/2023"
-                                                    location="GPA: 3.92"
-                                                    bottomPadding={0}
-                                                    mt={0.5}
-                                                    mb={0}
-                                                    iconStyling={iconStyling}
-                                                />
-                                            </div>
+                                            <Education iconStyling={iconStyling} waveStyling={wave4Styling} />
                                         </div>
                                         <div style={{
                                             display: "flex",
