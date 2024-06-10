@@ -32,7 +32,7 @@ function Education({ iconStyling, waveStyling}) {
             iconStyling={iconStyling}
         >
             <div style={{ fontSize: "18px"}}>
-                <span style={{fontFamily: "canela-dlightitalic"}}> Relevant Coursework:</span>  Discrete Mathematics; Intro to Computer Programming; Intro to Computer Science; Linear Algebra; Calculus I.
+                <span style={{fontFamily: "canela-dlightitalic"}}> Relevant Coursework:</span>  Discrete Mathematics; Intro to Computer Programming; Intro to Computer Science; Calculus I.
             </div>
         </EducationItem>
     </div>
