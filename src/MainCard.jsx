@@ -90,7 +90,7 @@ export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}})
                     <WaveSquare waveClass="wave1" waveStyle={wave1Styling}>
                         <WaveSquare waveClass="wave2" waveStyle={wave2Styling}>
                             <WaveSquare waveClass="wave3" waveStyle={wave3Styling}>
-                                <Flexbox justifyContent="space-evenly" gap={20} pt={10}>
+                                {/* <Flexbox justifyContent="space-evenly" gap={20} pt={10}>
                                     <Flexbox fG={1} fB={60} fD="column" justifyContent="space-between">
                                         <div>
                                             <HeaderTypography headerClass="expCont" pl={15}>
@@ -110,9 +110,36 @@ export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}})
                                         </HeaderTypography>
                                         <Skills iconStyling={iconStyling} waveStyling={wave4Styling} />
                                     </Flexbox>
-                                </Flexbox>
-                                {/* <div className="expCont"><h2>past experience</h2></div> */}
+                                </Flexbox> */}
+                                <div className="expCont" style={{marginBottom:"15px"}}><h2>past experience</h2></div>
+                                {/* <HeaderTypography headerClass="expCont" pl={15} mb={-10}>
+                                    past experience
+                                </HeaderTypography> */}
                                 <Experience iconStyling={iconStyling} waveStyling={wave4Styling} />
+                                <Flexbox justifyContent="space-evenly" gap={20} pt={30}>
+                                    <Flexbox fG={1} fB={60} fD="column" justifyContent="space-between">
+                                        <div>
+                                            <HeaderTypography headerClass="expCont" pl={15}>
+                                                education
+                                            </HeaderTypography>
+                                            <Education iconStyling={iconStyling} waveStyling={wave4Styling} />
+                                        </div>
+                                        <Flexbox justifyContent="start" alignItems="start">
+                                            {/* <HeaderTypography headerClass="expCont" pl={15} mb={-10}>
+                                                experience
+                                            </HeaderTypography> */}
+                                            <HeaderTypography headerClass="expCont" pl={15} mb={10} mt={25}>
+                                                projects
+                                            </HeaderTypography>
+                                        </Flexbox>
+                                    </Flexbox>
+                                    <Flexbox fG={1} fB={40} fD="column">
+                                        <HeaderTypography headerClass="expCont" pl={10}>
+                                            skills
+                                        </HeaderTypography>
+                                        <Skills iconStyling={iconStyling} waveStyling={wave4Styling} />
+                                    </Flexbox>
+                                </Flexbox>
                                 <Projects iconStyling={iconStyling} waveStyling={wave4Styling} />
                                 <Volunteering iconStyling={iconStyling} waveStyling={wave4Styling} />
                             </WaveSquare>

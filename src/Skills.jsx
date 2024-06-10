@@ -4,7 +4,7 @@ import SkillsItem from "./components/SkillsItem";
 
 export default function Skills({ iconStyling, waveStyling}) {
     return (
-        <div className="wave4" style={{ padding: "1.7vw 2.15vw 2.15vw 2.15vw", display: "flex", flexDirection: "column", flexGrow: 1, ...waveStyling}}> 
+        <div className="wave4" style={{ marginBottom: "20px", padding: "1.7vw 2.15vw 2.15vw 2.15vw", display: "flex", flexDirection: "column", flexGrow: 1, ...waveStyling}}> 
             <SkillsItem
                 itemName="Languages:" 
                 iconStyling={iconStyling}
