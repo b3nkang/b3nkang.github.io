@@ -12,9 +12,13 @@ function Education({ iconStyling, waveStyling}) {
             period="9/2023 - 5/2026"
             location="GPA: 3.86"
             iconStyling={iconStyling}
-            mt={0.93}
+            mt={2.93}
             mb={3}
-        />
+        >
+            <div style={{ fontSize: "18px"}}>
+                <span style={{fontFamily: "canela-dlightitalic"}}> Relevant Coursework:</span> Design and Analysis of Algorithms; Computer Systems; Deep Learning; Software Engineering; Program Design, Data Structures & Algorithms; Statistical Inference; Linear Algebra; Calculus II.
+            </div>
+        </EducationItem>
         <EducationItem
             imgSrc={"/src/assets/images/new_york_university_logo.jpeg"}
             alt={"New York University logo"}
@@ -24,9 +28,13 @@ function Education({ iconStyling, waveStyling}) {
             location="GPA: 3.92"
             bottomPadding={0}
             mt={0.5}
-            mb={0.5}
+            mb={2.5}
             iconStyling={iconStyling}
-        />
+        >
+            <div style={{ fontSize: "18px"}}>
+                <span style={{fontFamily: "canela-dlightitalic"}}> Relevant Coursework:</span>  Discrete Mathematics; Intro to Computer Programming; Intro to Computer Science; Linear Algebra; Calculus I.
+            </div>
+        </EducationItem>
     </div>
     )
 }
