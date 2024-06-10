@@ -8,6 +8,7 @@ import HeaderTypography from "./components/HeaderTypography"
 import Flexbox from "./components/Flexbox"
 import ProjectItem from "./components/ProjectItem"
 import Projects from "./Projects"
+import Volunteering from "./Volunteering"
 
 export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
     const [divStyling, setDivStyling] = useState({ 
@@ -113,6 +114,7 @@ export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}})
                                 {/* <div className="expCont"><h2>past experience</h2></div> */}
                                 <Experience iconStyling={iconStyling} waveStyling={wave4Styling} />
                                 <Projects iconStyling={iconStyling} waveStyling={wave4Styling} />
+                                <Volunteering iconStyling={iconStyling} waveStyling={wave4Styling} />
                             </WaveSquare>
                         </WaveSquare>
                     </WaveSquare>
