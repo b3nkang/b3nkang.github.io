@@ -24,7 +24,7 @@ function Experience({ iconStyling, waveStyling}) {
             location={`(Remote) Seattle, WA`}
             iconStyling={iconStyling}
         >
-            Engineered job scraper with <code>bs4/Selenium</code>, utilizing <code>instructor</code> and <code>Pydantic</code> to extract JSON via OpenAI's API. Reduced scraper API costs by 10<sup>3</sup>% ($0.01 to $0.0005/call) via chunking inputs and model downgrades while holding 98% accuracy.
+            Engineered job scraper with <code>bs4/Selenium</code>, utilizing <code>instructor</code> and <code>Pydantic</code> to extract JSON via OpenAI's API. Reduced scraper API costs by ~1500% ($0.01 to $0.0005/call) via chunking inputs and model downgrades while holding 98% accuracy.
         </ExperienceItem>
         <ExperienceItem 
             imgSrc={"/src/assets/images/letsift_logo.jpeg"} 

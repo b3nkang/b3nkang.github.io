@@ -116,10 +116,10 @@ export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}})
                                     past experience
                                 </HeaderTypography> */}
                                 <Experience iconStyling={iconStyling} waveStyling={wave4Styling} />
-                                <Flexbox justifyContent="space-evenly" gap={20} pt={30}>
-                                    <Flexbox fG={1} fB={60} fD="column" justifyContent="space-between">
+                                <Flexbox justifyContent="space-evenly" gap={20} pt={35}>
+                                    <Flexbox fG={1} fB={61} fD="column" justifyContent="space-between">
                                         <div>
-                                            <HeaderTypography headerClass="expCont" pl={15}>
+                                            <HeaderTypography headerClass="expCont" pl={15} mb={10}>
                                                 education
                                             </HeaderTypography>
                                             <Education iconStyling={iconStyling} waveStyling={wave4Styling} />
@@ -133,8 +133,8 @@ export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}})
                                             </HeaderTypography>
                                         </Flexbox>
                                     </Flexbox>
-                                    <Flexbox fG={1} fB={40} fD="column">
-                                        <HeaderTypography headerClass="expCont" pl={10}>
+                                    <Flexbox fG={1} fB={39} fD="column">
+                                        <HeaderTypography headerClass="expCont" pl={10} mb={5}>
                                             skills
                                         </HeaderTypography>
                                         <Skills iconStyling={iconStyling} waveStyling={wave4Styling} />
