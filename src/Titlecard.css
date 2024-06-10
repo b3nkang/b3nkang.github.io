@@ -25,7 +25,7 @@ h1.titlecardName {
 .panel {
     display: flex;
     justify-content: space-between;
-    background-color: white;
+    background-color: aliceblue;
     z-index: 999;
 }
 
