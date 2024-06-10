@@ -12,6 +12,7 @@ export default function BWGradientWave({
     spacerHeight=5,
     spacerWaveClassMinHeight=100,
     colorArray=[bwgrad2, bwgrad3, bwgrad5, bwgrad7, bwgrad9, bwgrad11, bwgrad13, bwgrad15, bwgrad16, bwgrad17, bwgrad18, bwgrad19, bwgrad20] 
+    // colorArray=[bwgrad2, bwgrad3, bwgrad4, bwgrad5, bwgrad6, bwgrad7, bwgrad8, bwgrad9, bwgrad10, bwgrad11, bwgrad12, bwgrad13]
 }) {
     return (
         <div style={overallGradStyling}>     
