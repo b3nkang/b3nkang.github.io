@@ -5,9 +5,9 @@ import HeaderTypography from './components/HeaderTypography';
 export default function Projects({ iconStyling, waveStyling}) {
     return (
         <div>
-            <HeaderTypography headerClass="expCont" pl={15} mb={10} mt={25}>
+            {/* <HeaderTypography headerClass="expCont" pl={15} mb={10} mt={25}>
                 projects
-            </HeaderTypography>
+            </HeaderTypography> */}
             <div className="wave4" style={waveStyling}>
                 <ProjectItem
                     title="Engine Analysis Unlocker"
