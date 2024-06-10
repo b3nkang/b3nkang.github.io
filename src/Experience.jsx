@@ -3,7 +3,7 @@ import ExperienceItem from './components/ExperienceItem';
 
 function Experience({ iconStyling, waveStyling}) {
     return (
-    <div className="wave4" style={{ marginTop: "20px", ...waveStyling}}>
+    <div className="wave4" style={{ ...waveStyling}}>
         <ExperienceItem
             imgSrc={"/src/assets/images/intus_care_logo.jpeg"} 
             alt={"Intus Care logo"}
