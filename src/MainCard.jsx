@@ -91,7 +91,7 @@ export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}})
                         <WaveSquare waveClass="wave2" waveStyle={wave2Styling}>
                             <WaveSquare waveClass="wave3" waveStyle={wave3Styling}>
                                 <Flexbox justifyContent="space-evenly" gap={20} pt={10}>
-                                    <Flexbox fG={1} fB={50} fD="column" justifyContent="space-between">
+                                    <Flexbox fG={1} fB={60} fD="column" justifyContent="space-between">
                                         <div>
                                             <HeaderTypography headerClass="expCont" pl={15}>
                                                 education
@@ -104,7 +104,7 @@ export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}})
                                             </HeaderTypography>
                                         </Flexbox>
                                     </Flexbox>
-                                    <Flexbox fG={1} fB={50} fD="column">
+                                    <Flexbox fG={1} fB={40} fD="column">
                                         <HeaderTypography headerClass="expCont" pl={10}>
                                             skills
                                         </HeaderTypography>
