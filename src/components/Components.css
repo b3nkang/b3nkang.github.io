@@ -74,3 +74,14 @@ div.eduItem {
   justify-content: space-between;
   gap: 0px;
 }
+
+@media (max-width: 960px) {
+  .eduSkillsScreen {
+    flex-direction: column !important;
+  }
+
+  .skillsScreen {
+    margin-top: -70px;
+    margin-bottom: 85px;
+  }
+}
