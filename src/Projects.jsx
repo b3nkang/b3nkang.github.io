@@ -10,7 +10,7 @@ export default function Projects({ iconStyling, waveStyling}) {
             </HeaderTypography> */}
             <div className="wave4" style={waveStyling}>
                 <ProjectItem
-                    title="Engine Analysis Unlocker"
+                    title="Chess.com Paid Analysis Unlocker"
                     mt={3.5}
                     mb={3.5}
                     fB={40}
