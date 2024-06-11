@@ -31,14 +31,15 @@ export default function ProjectItem({
             justifyContent: "space-between",
             gap: "4px",
         }}>
-            <div style={{
+            <div className="projectButtonsScreen" style={{
                 display: "flex",
                 gap: `20px`,
                 justifyContent: "left",
                 alignItems: "start",
+                flexDirection: "row",
                 flexGrow: 1
             }}>
-                <div className="expItemTitle" style={{ marginTop: "4px", flexBasis: `${fB}%` }}>
+                <div className="expItemTitle projectButtonStyleScreen" style={{ marginTop: "4px", flexBasis: `${fB}%` }}>
                     <h4 style={{
                         lineHeight: 0.9,
                         marginBottom: `2px`,
