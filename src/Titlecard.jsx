@@ -6,8 +6,8 @@ function Titlecard({ findNewHeight }){
 
     const updateHeight = () => {
         if (descRef.current) {
-            findNewHeight(descRef.current.clientHeight)
-            console.log("useEffect hit with ref of height: ",descRef.current.clientHeight)
+            findNewHeight(descRef.current.getBoundingClientRect().bottom)
+            console.log("useEffect hit with ref of height: ",descRef.current.getBoundingClientRect().bottom)
         }
     }
 
@@ -37,8 +37,8 @@ function Titlecard({ findNewHeight }){
                     <div>linkedin: <a className="contact" href="https://linkedin.com/in/b3nkang" target="_blank" rel="noopener noreferrer">in/b3nkang</a></div>
                 </div>
             </div>
-            <div ref={descRef} className='description'>
-                Hi, welcome to my personal site! My name is Ben, and I'm a software developer and junior at Brown University. 
+            <div className='description'>
+                Hi, welcome to my personal site! My name is Ben, and I'm a software developer and junior at Brown University.
                 <div className="br"></div>
                 I'm interested in computer science broadly, with a focus on systems, and I also do full-stack development. At Brown, I'm on the Sc.B. track for Computer Science.
                 {/* <div className="br"></div>
@@ -46,6 +46,7 @@ function Titlecard({ findNewHeight }){
                 <div className="br"></div>
                 {/* In my spare time, I can be found misplaying the Grand Prix Attack on Chess.com, updating my list of favorite restaurants on Beli, and doing some photography work here and there! */}
                 On the side, I can be found misplaying the Grand Prix Attack on Chess.com, struggling to keep up on Brown Cycling Team rides, and doing some photography work here and there!
+                <div ref={descRef}></div>
             </div>
         </div>
     )
