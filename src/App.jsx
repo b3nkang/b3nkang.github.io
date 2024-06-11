@@ -9,14 +9,14 @@ import MainCard from './MainCard'
 function App({ titlecardSpacerHeight }) {
 
   const waveEndRef = useRef(null)
-  const [windowHeight, setWindowHeight] = useState(`${titlecardSpacerHeight + 40}px`)
+  const [windowHeight, setWindowHeight] = useState(`${titlecardSpacerHeight-60}px`)
 
   useEffect(() => {
     const vhInPx = window.innerHeight * 0.3;
-    if (vhInPx >= (titlecardSpacerHeight+40)) {
+    if (vhInPx >= (titlecardSpacerHeight-80)) {
       setWindowHeight(`${vhInPx}px`)
-    } else if ((titlecardSpacerHeight+40) > vhInPx) {
-      setWindowHeight(`${(titlecardSpacerHeight+40)}px`)
+    } else if ((titlecardSpacerHeight-80) > vhInPx) {
+      setWindowHeight(`${(titlecardSpacerHeight-80)}px`)
     }
   }, [titlecardSpacerHeight]);
 
