@@ -85,3 +85,13 @@ div.eduItem {
     margin-bottom: 85px;
   }
 }
+
+@media (max-width: 890px) {
+  .projectButtonsScreen {
+    flex-direction: column !important;
+  }
+
+  .projectButtonStyleScreen {
+    margin-bottom: -10px;
+  }
+}
