@@ -1,3 +1,5 @@
+import './Components.css'
+
 export default function Flexbox({
     fG,
     fB,
@@ -9,10 +11,11 @@ export default function Flexbox({
     pr=0,
     pt=0,
     pb=0,
+    mediaClass,
     children
 }) {
     return (
-        <div style={{
+        <div className={mediaClass} style={{
             display: 'flex',
             flexGrow: fG,
             flexBasis: `${fB}%`,
