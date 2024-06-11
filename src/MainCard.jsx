@@ -25,19 +25,27 @@ export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}})
     const [iconStyling, setIconStyling] = useState({ opacity: 0 })
     const waveSetStateArray = [setWave0Styling,setWave1Styling,setWave2Styling,setWave3Styling,setWave4Styling]
     const expWaveColorArray = [
-        { backgroundColor: 'rgba(47,47,47,1.0)' },
-        { backgroundColor: 'rgba(80,80,80,1.0)' },
-        { backgroundColor: 'rgba(120,120,120,1.0)' },
-        { backgroundColor: 'rgba(205,205,205,1.0)' },
-        { backgroundColor: 'rgba(240,240,240,1.0)' }
-    ]
+        { backgroundColor: 'rgba(32,40,47,1.0)' },
+        { backgroundColor: 'rgba(65,73,80,1.0)' },
+        { backgroundColor: 'rgba(105,113,120,1.0)' }, 
+        { backgroundColor: 'rgba(190,198,205,1.0)' },
+        { backgroundColor: 'rgba(230,238,245,1.0)' }
+    ];
+    // const expWaveColorArray = [
+    //     { backgroundColor: 'rgba(32,40,47,1.0)' },
+    //     { backgroundColor: 'rgba(65,73,80,1.0)' },
+    //     { backgroundColor: 'rgba(105,113,120,1.0)' }, 
+    //     { backgroundColor: 'rgba(190,198,205,1.0)' },
+    //     { backgroundColor: 'rgba(225,233,240,1.0)' }
+    // ];
 
     useEffect(() => {
         function checkRefLocation() {
             if (nextSectionRef.current) {
                 if (nextSectionRef.current.getBoundingClientRect().top < 0) {
                     setRefStyling({ 
-                        backgroundColor: 'rgba(25,25,25,1.0)', 
+                        backgroundColor: 'rgba(17,25,32,1.0)', 
+                        // backgroundColor: 'rgba(25,25,25,1.0)', 
                     });
                                         
                     setDivStyling({        
@@ -119,7 +127,7 @@ export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}})
                                 <Flexbox justifyContent="space-evenly" gap={20} pt={35}>
                                     <Flexbox fG={1} fB={61} fD="column" justifyContent="space-between">
                                         <div>
-                                            <HeaderTypography headerClass="expCont" pl={15} mb={10}>
+                                            <HeaderTypography headerClass="expCont" pl="2vw" mb={10}>
                                                 education
                                             </HeaderTypography>
                                             <Education iconStyling={iconStyling} waveStyling={wave4Styling} />
@@ -128,13 +136,13 @@ export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}})
                                             {/* <HeaderTypography headerClass="expCont" pl={15} mb={-10}>
                                                 experience
                                             </HeaderTypography> */}
-                                            <HeaderTypography headerClass="expCont" pl={15} mb={10} mt={25}>
+                                            <HeaderTypography headerClass="expCont" pl="2.5vw"  mb={10} mt={25}>
                                                 projects
                                             </HeaderTypography>
                                         </Flexbox>
                                     </Flexbox>
                                     <Flexbox fG={1} fB={39} fD="column">
-                                        <HeaderTypography headerClass="expCont" pl={10} mb={5}>
+                                        <HeaderTypography headerClass="expCont" pl="1.8vw" mb={5}>
                                             skills
                                         </HeaderTypography>
                                         <Skills iconStyling={iconStyling} waveStyling={wave4Styling} />
