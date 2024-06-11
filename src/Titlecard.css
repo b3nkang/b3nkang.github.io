@@ -3,6 +3,7 @@
 .header {
     margin-left: 3em;
     color: #213547;
+    flex-basis: 45%;
 }
 
 a.contact {
@@ -20,6 +21,8 @@ div.contactPanel {
 h1.titlecardName {
   text-align: left;
   font-size: 70px;
+  padding-bottom: 2px;
+  margin-left: -2px;
 }
 
 .panel {
@@ -30,12 +33,27 @@ h1.titlecardName {
 }
 
 .description {
-    width: 50%;
+    /* width: 50%; */
     font-family: 'canela-tlight';
     text-align: left;
     font-size: 18px;
-    padding-right: 2em;
+    margin-right: 2.5em;
     color: #213547;
+    margin-left: 3em;
+    flex-grow: 1;
+    flex-basis: 57%;
+}
+
+@media (max-width: 925px) {
+  .panel {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px
+  }
+
+  .description {
+    margin-right: 5em;
+  }
 }
 
 .br {
