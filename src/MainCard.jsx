@@ -9,6 +9,7 @@ import Flexbox from "./components/Flexbox"
 import ProjectItem from "./components/ProjectItem"
 import Projects from "./Projects"
 import Volunteering from "./Volunteering"
+import Spacer from "./components/Spacer"
 
 export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
     const [divStyling, setDivStyling] = useState({ 
@@ -124,7 +125,13 @@ export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}})
                                     past experience
                                 </HeaderTypography> */}
                                 <Experience iconStyling={iconStyling} waveStyling={wave4Styling} />
-                                <Flexbox justifyContent="space-evenly" gap={20} pt={35}>
+                                <Flexbox
+                                    fD="row"
+                                    justifyContent="space-evenly"
+                                    gap={20}
+                                    pt={35}
+                                    mediaClass="eduSkillsScreen"
+                                >
                                     <Flexbox fG={1} fB={61} fD="column" justifyContent="space-between">
                                         <div>
                                             <HeaderTypography headerClass="expCont" pl="2vw" mb={10}>
@@ -136,12 +143,13 @@ export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}})
                                             {/* <HeaderTypography headerClass="expCont" pl={15} mb={-10}>
                                                 experience
                                             </HeaderTypography> */}
-                                            <HeaderTypography headerClass="expCont" pl="2.5vw"  mb={10} mt={25}>
+                                            {/* <HeaderTypography headerClass="expCont" pl="2.5vw"  mb={10} mt={25}>
                                                 projects
-                                            </HeaderTypography>
+                                            </HeaderTypography> */}
+                                            <div style={{height: "90px"}}></div>
                                         </Flexbox>
                                     </Flexbox>
-                                    <Flexbox fG={1} fB={39} fD="column">
+                                    <Flexbox fG={1} fB={39} fD="column" mediaClass="skillsScreen">
                                         <HeaderTypography headerClass="expCont" pl="1.8vw" mb={5}>
                                             skills
                                         </HeaderTypography>
