@@ -6,10 +6,8 @@ import Skills from "./Skills"
 import WaveSquare from "./components/WaveSquare"
 import HeaderTypography from "./components/HeaderTypography"
 import Flexbox from "./components/Flexbox"
-import ProjectItem from "./components/ProjectItem"
 import Projects from "./Projects"
 import Volunteering from "./Volunteering"
-import Spacer from "./components/Spacer"
 
 export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}}){
     const [divStyling, setDivStyling] = useState({ 
@@ -32,13 +30,6 @@ export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}})
         { backgroundColor: 'rgba(190,198,205,1.0)' },
         { backgroundColor: 'rgba(230,238,245,1.0)' }
     ];
-    // const expWaveColorArray = [
-    //     { backgroundColor: 'rgba(32,40,47,1.0)' },
-    //     { backgroundColor: 'rgba(65,73,80,1.0)' },
-    //     { backgroundColor: 'rgba(105,113,120,1.0)' }, 
-    //     { backgroundColor: 'rgba(190,198,205,1.0)' },
-    //     { backgroundColor: 'rgba(225,233,240,1.0)' }
-    // ];
 
     useEffect(() => {
         function checkRefLocation() {
