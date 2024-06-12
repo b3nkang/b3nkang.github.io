@@ -1,5 +1,3 @@
-/* temporary */
-
 export default function Footer() {
     return (
         <div className="spacer" style={{
@@ -19,7 +17,7 @@ export default function Footer() {
                 gap: "10px",
                 alignItems: 'center',
             }}>
-            <div style={{marginRight:"3vw"}}>last updated june 2024</div>
+            <div style={{marginRight:"3vw", zIndex: "3000"}}>last updated june 2024</div>
             <div style={{
                 display: "flex",
                 gap: "20px"
