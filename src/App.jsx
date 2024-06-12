@@ -24,22 +24,17 @@ function App({ titlecardSpacerHeight }) {
   return (
     <div className='overallContainer'>
       <Spacer height={windowHeight} color={transpWhite} zindex={998} />
-      {/* <BWGradient spacerHeight={5} indexMod={1} /> */}
       <BWGradientWave nextSectionRef={waveEndRef} spacerHeight={462} indexMod={1} />
       <Spacer height={"0vh"} color={bwgrad20} zindex={1002} />
       <MainCard nextSectionRef={waveEndRef} />
       <div style={{
-        // height: "100%",
-        // width: "100%",
         transform: "rotate(180deg)",
         transformOrigin: "center center",
-        // zIndex: 1,
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         position: 'relative',
         marginTop: '-15vh'
-        // overflow: "hidden"
       }}>
         <BWGradientWave
           spacerHeight={462}
@@ -49,7 +44,10 @@ function App({ titlecardSpacerHeight }) {
           spacerWaveClassMinHeight={0}
         />
       </div>
-      <Footer />
+      <div style={{
+          height: "11vh"
+      }}>
+      </div>
     </div>
   )
 }
