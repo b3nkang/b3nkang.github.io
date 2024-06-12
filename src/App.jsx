@@ -45,7 +45,7 @@ function App({ titlecardSpacerHeight }) {
         />
       </div>
       <div style={{
-          height: "11vh"
+          height: "6vh"
       }}>
       </div>
     </div>
