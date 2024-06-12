@@ -10,7 +10,7 @@ function Volunteering({ iconStyling, waveStyling}) {
             </HeaderTypography>
             <div className="wave4" style={{ marginTop: "20px", ...waveStyling}}>
                 <ExperienceItem
-                    imgSrc={"/src/assets/images/fsab_logo.jpeg"}
+                    imgSrc={"/images/fsab_logo.jpeg"}
                     alt={"FSAB logo"}
                     name="Full Stack at Brown"
                     title="Project Manager, Software Developer"
@@ -21,7 +21,7 @@ function Volunteering({ iconStyling, waveStyling}) {
                     Develop sites for local groups at Full Stack @ Brown, Brown’s pro-bono SWE club. Project Manager for Spring ’24. Created Brown JCA’s site with <code>TS/React/Material-UI</code> on 9-dev team, using <code>Firebase</code> for posts & image uploads.                
                 </ExperienceItem>
                 <ExperienceItem
-                    imgSrc={"/src/assets/images/develop_for_good_logo.jpeg"}
+                    imgSrc={"/images/develop_for_good_logo.jpeg"}
                     alt={"Develop for Good logo"}
                     name="Develop for Good"
                     title="Software Developer"
