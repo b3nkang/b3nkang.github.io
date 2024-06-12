@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import Titlecard from './Titlecard.jsx'
 import { useState } from 'react'
+import Flexbox from './components/Flexbox.jsx'
 
 const RootComponent = () => {
   const [titlecardSpacerHeight, setTitlecardSpacerHeight] = useState(30) // initial
@@ -16,7 +17,15 @@ const RootComponent = () => {
   return (
     <React.StrictMode>
       <div className="titlecard">
-        <Titlecard findNewHeight={findNewHeight}/>
+        <div style={{
+          display: "flex",
+          justifyContent: "center",
+          flexGrow: 1,
+          minWidth: "90vw",
+          maxWidth: "1400px"
+        }}>
+          <Titlecard findNewHeight={findNewHeight}/>
+        </div>
       </div>
       <App titlecardSpacerHeight={titlecardSpacerHeight}/>
     </React.StrictMode>
