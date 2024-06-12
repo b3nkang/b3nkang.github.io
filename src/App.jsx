@@ -48,6 +48,9 @@ function App({ titlecardSpacerHeight }) {
           height: "6vh"
       }}>
       </div>
+      {/* <div style={{marginTop: "-3vh", marginBottom: "3vh"}}>
+        <Footer />
+      </div> */}
     </div>
   )
 }

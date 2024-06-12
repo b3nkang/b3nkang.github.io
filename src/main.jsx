@@ -20,13 +20,13 @@ const RootComponent = () => {
         <div className="titlecard">
           <div style={{
               display: "flex",
-              justifyContent: "space-between",
               flexGrow: 1,
               alignItems: "center",
               flexDirection: 'column',
-              height: "85vh",
               flexBasis: "75%",
-              gap: "120px"
+              gap: "120px",
+              height: "85vh",
+              justifyContent: "space-between",
             }}>
             <div style={{
               display: "flex",

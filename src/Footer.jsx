@@ -2,14 +2,14 @@ export default function Footer() {
     return (
         <div className="spacer" style={{
             backgroundColor: `aliceblue`,
-            // minHeight: `33vh`,
-            // marginTop: `-30vh`,
             width:"100%",
             display:'flex',
             flexDirection:'column',
             alignItems:'center',
             justifyContent: 'end',
-            padding: '0 0 5vh 0'
+            padding: '0 0 5vh 0',
+            // minHeight: `33vh`,
+            // marginTop: `-30vh`,
         }}>
             <div style={{
                 display: "flex",
