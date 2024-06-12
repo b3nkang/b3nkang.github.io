@@ -94,7 +94,7 @@ export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}})
 
     return(
         <WaveSquare waveClass="panelEd" waveStyle={{ zIndex:"2000", ...divStyling}}>
-            <WaveSquare waveClass="expPanel" waveStyle={refStyling}>
+            <WaveSquare waveClass="expPanel cardBounder" waveStyle={refStyling}>
                 <WaveSquare waveClass="wave0" waveStyle={wave0Styling}>
                     <WaveSquare waveClass="wave1" waveStyle={wave1Styling}>
                         <WaveSquare waveClass="wave2" waveStyle={wave2Styling}>
