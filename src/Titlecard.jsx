@@ -7,7 +7,7 @@ function Titlecard({ findNewHeight }){
     const updateHeight = () => {
         if (descRef.current) {
             findNewHeight(descRef.current.getBoundingClientRect().bottom)
-            console.log("useEffect hit with ref of height: ",descRef.current.getBoundingClientRect().bottom)
+            // console.log("useEffect hit with ref of height: ",descRef.current.getBoundingClientRect().bottom)
         }
     }
 
