@@ -52,7 +52,7 @@ export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}})
                         waveSetStateArray[i](expWaveColorArray[i])
                     }
 
-                    console.log("Set ref styling to grey");
+                    // console.log("Set ref styling to grey");
                 } else {
                     setRefStyling({ 
                         backgroundColor: `rgba(${color.r},${color.g},${color.b},${color.a})`
@@ -66,10 +66,10 @@ export default function MainCard({nextSectionRef, color = {r:0,g:0,b:0,a:1.0,}})
                         opacity: 0, 
                     })
                     
-                    console.log("Reset ref styling to original color");
+                    // console.log("Reset ref styling to original color");
                 }
             } else {
-                console.log("nextSectionRef.current is null");
+                // console.log("nextSectionRef.current is null");
             }
         }
         window.addEventListener('scroll', checkRefLocation)
