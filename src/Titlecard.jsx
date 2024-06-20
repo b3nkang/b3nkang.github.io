@@ -40,7 +40,7 @@ function Titlecard({ findNewHeight }){
             <div className='description'>
                 Hi, welcome to my personal site! My name is Ben, and I'm a software developer and junior at Brown University.
                 <div className="br"></div>
-                I'm interested in computer science broadly, with a focus on systems, and I also do full-stack development. At Brown, I'm on the Sc.B. track for Computer Science.
+                I'm interested in computer science broadly, and I also do full-stack development. At Brown, I'm on the Sc.B. track for Computer Science.
                 {/* <div className="br"></div>
                 On campus, I'm involved with Full Stack @ Brown, Brown Chess Club, and Brown Cycling Team. */}
                 <div className="br"></div>
