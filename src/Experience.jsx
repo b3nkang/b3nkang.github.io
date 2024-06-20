@@ -5,7 +5,7 @@ function Experience({ iconStyling, waveStyling}) {
     return (
     <div className="wave4" style={{ ...waveStyling}}>
         <ExperienceItem
-            imgSrc={"/site/images/intus_care_logo.jpeg"} 
+            imgSrc={"/images/intus_care_logo.jpeg"} 
             alt={"Intus Care logo"}
             name="Intus Care"
             title="Software Engineering Intern"
@@ -16,7 +16,7 @@ function Experience({ iconStyling, waveStyling}) {
             Incoming for summer 2024, working on applications team with <code>MongoDB</code>, <code>React</code>, <code>Zod</code> (data validation), <code>Zustand</code> (state manager), and <code>TypeScript</code>. Developing <code>tRPC</code> protocol routes and data modelling for seeding <code>MongoDB</code> instances.
         </ExperienceItem>
         <ExperienceItem 
-            imgSrc={"/site/images/usereferme_logo.jpeg"} 
+            imgSrc={"/images/usereferme_logo.jpeg"} 
             alt={"Refer Me logo"}
             name="Refer Me"
             title="Software Engineering Intern"
@@ -27,7 +27,7 @@ function Experience({ iconStyling, waveStyling}) {
             Engineered job scraper with <code>bs4/Selenium</code>, utilizing <code>instructor</code> and <code>Pydantic</code> to extract JSON via OpenAI's API. Reduced scraper API costs by ~1500% ($0.01 to $0.0005/call) via chunking inputs and model downgrades while holding 98% accuracy.
         </ExperienceItem>
         <ExperienceItem 
-            imgSrc={"/site/images/letsift_logo.jpeg"} 
+            imgSrc={"/images/letsift_logo.jpeg"} 
             alt={"Sift logo"}
             name="Sift"
             title="Software Engineering Intern"
@@ -38,7 +38,7 @@ function Experience({ iconStyling, waveStyling}) {
             Led homepage migration to <code>React/TypeScript/Next.js</code> stack, deprecating thousands of lines of code. Optimized site performance with React Lazy Load, Next.js Image and server-side rendering to achieve Lighthouse SEO score of 100."
         </ExperienceItem>
         <ExperienceItem
-            imgSrc={"/site/images/cims_logo.jpeg"} 
+            imgSrc={"/images/cims_logo.jpeg"} 
             alt={"NYU Courant logo"}
             name="AI & Predictive Analytics Lab"
             title="Visiting Researcher, NYU Courant"

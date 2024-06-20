@@ -5,7 +5,7 @@ function Education({ iconStyling, waveStyling}) {
     return (
     <div className="wave4" style={{  padding: "2.3vw 2.3vw 0.5vw 2.3vw", ...waveStyling}}>
         <EducationItem
-            imgSrc={"/site/images/brown_university_logo.jpeg"}
+            imgSrc={"/images/brown_university_logo.jpeg"}
             alt={"Brown University logo"}
             name="Brown University"
             title="Sc.B. in Computer Science"
@@ -20,7 +20,7 @@ function Education({ iconStyling, waveStyling}) {
             </div>
         </EducationItem>
         <EducationItem
-            imgSrc={"/site/images/new_york_university_logo.jpeg"}
+            imgSrc={"/images/new_york_university_logo.jpeg"}
             alt={"New York University logo"}
             name="New York University"
             title="Presidential Honors Scholar"
