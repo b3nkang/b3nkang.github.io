@@ -35,7 +35,7 @@ function Experience({ iconStyling, waveStyling}) {
             location="Providence, RI"
             iconStyling={iconStyling}
         >
-            Led homepage migration to <code>React/TypeScript/Next.js</code> stack, deprecating thousands of lines of code. Optimized site performance with React Lazy Load, Next.js Image and server-side rendering to achieve Lighthouse SEO score of 100."
+            Led homepage migration to <code>React/TypeScript/Next.js</code> stack, deprecating thousands of lines of code. Optimized site performance with React Lazy Load, Next.js Image and server-side rendering to achieve Lighthouse SEO score of 100.
         </ExperienceItem>
         <ExperienceItem
             imgSrc={"/images/cims_logo.jpeg"} 
