@@ -13,7 +13,7 @@ function Experience({ iconStyling, waveStyling}) {
             location="Cambridge, MA"
             iconStyling={iconStyling}
         >
-            Incoming for summer 2024, working on applications team with <code>MongoDB</code>, <code>React</code>, <code>Zod</code> (data validation), <code>Zustand</code> (state manager), and <code>TypeScript</code>. Developing <code>tRPC</code> protocol routes and data modelling for seeding <code>MongoDB</code> instances.
+            Incoming for summer 2024, working on applications team with <code>MongoDB</code>, <code>React</code>, <code>Zod</code> (data validation), <code>Zustand</code> (state manager), and <code>TypeScript</code>. Developing <code>tRPC</code>-based APIs and schema & data models for <code>PostgreSQL</code> migrations to <code>MongoDB</code>.
         </ExperienceItem>
         <ExperienceItem 
             imgSrc={"/images/usereferme_logo.jpeg"} 
@@ -49,7 +49,7 @@ function Experience({ iconStyling, waveStyling}) {
             mb={0}
             iconStyling={iconStyling}
         >
-            Built world’s largest corpus of queryable LENR research on AI & Low-Energy Nuclear Reactions (AI-LENR) team. Co-authored paper in IEEE ICBDA 2024 and was main contributor to LENRdashboard.com, built with <code>D3.js</code>, <code>JavaScript</code>, <code>HTML/CSS</code>.
+            Built world’s largest corpus of queryable LENR research on AI & Low-Energy Nuclear Reactions (AI-LENR) team. Co-authored paper in IEEE ICBDA 2024 and was main contributor to <a href="https://lenrdashboard.com/#" style={{ color: "black"}}>LENRdashboard.com</a>, built with <code>D3.js</code>, <code>JavaScript</code>, <code>HTML/CSS</code>.
         </ExperienceItem>  
     </div>
     )
