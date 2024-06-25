@@ -1,6 +1,7 @@
 import LanguageButton from "./components/LanguageButton";
 import './App.css';
 import SkillsItem from "./components/SkillsItem";
+import SkillIconItems from "./components/SkillIconItems";
 
 export default function Skills({ iconStyling, waveStyling}) {
     return (
@@ -16,11 +17,27 @@ export default function Skills({ iconStyling, waveStyling}) {
                 skillsArray={["React", "Vite", "Next.js", "Tailwind", "Flask", "Selenium", "Pytest", "JUnit", "Playwright"]}
             />
             <SkillsItem 
-                mb={0} 
+                // mb={0} 
                 itemName="Dev Tools:" 
                 iconStyling={iconStyling}
                 skillsArray={["MongoDB", "Firestore", "GCP", "Zod", "Zustand", "tRPC", "Git", "VS Code", "IntelliJ"]}
             />
+            {/* <SkillIconItems
+                itemName="Languages:" 
+                iconStyling={iconStyling}
+                skills="py,java,js,ts,html,css"
+            />
+            <SkillIconItems
+                itemName="Frameworks & Libraries:" 
+                iconStyling={iconStyling}
+                skills="react,vite,next,tailwind,materialui,flask,selenium,vitest"
+            />
+            <SkillIconItems
+                mb={0} 
+                itemName="Databases & Dev Tools:" 
+                iconStyling={iconStyling}
+                skills={"mongodb,firebase,gcp,git,docker,github,vscode,idea,vercel"}
+            /> */}
         </div>
 
     )
