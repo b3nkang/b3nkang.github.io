@@ -15,6 +15,7 @@ cp dist/CNAME gh-pages/
 general deploy:
 rm -rf dist
 npm run build
+echo "" > dist/CNAME
 cd gh-pages
 cp -r ../dist/* .
 git add commit
