@@ -17,7 +17,7 @@ rm -rf dist
 npm run build
 echo "" > dist/CNAME
 cd gh-pages
-cp -r ../dist/* .
+cp -r ../dist/* . => check CNAME
 git add commit
 git push origin gh-pages --force
 ```
