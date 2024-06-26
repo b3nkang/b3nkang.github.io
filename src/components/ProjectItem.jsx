@@ -60,8 +60,11 @@ export default function ProjectItem({
                     flexWrap: "wrap",
                     flexBasis: "100%"
                 }}>
-                    { skillsArray.map((skill) => {
+                    {/* { skillsArray.map((skill) => {
                         return <LanguageButton text={skill} iconStyling={iconStyling} />
+                    })} */}
+                    { skillsArray.map((imgUrl) => {
+                        return <img key={imgUrl} src={`https://github.com/onemarc/tech-icons/raw/main/icons/${imgUrl}.svg`} style={{ width: '50px', ...iconStyling}} />
                     })}
                 </div>
 
