@@ -32,7 +32,7 @@ export default function Projects({ iconStyling, waveStyling}) {
                     skillsArray={["opencv-dark", "python-dark", "tensorflow", "numpy","pandas","git"]}
                     url="https://github.com/b3nkang/scrabble-detector"
                 >
-                    Developed computer vision-based board detector on NASPA Scrabble streams using OpenCV’s <code>Otsu</code> thresholding, largest contour, <code>Hough-line</code> & <code>DBSCAN</code>. Detected board was sliced and fed into Scrabble-tile CNN architecture with 3 conv & 2 FC layers, trained on Chars74k dataset, achieving with 91% training acc.                                        
+                    Developed computer vision-based board detector on NASPA Scrabble streams using OpenCV’s <code>Otsu</code> thresholding, largest contour, <code>Hough-line</code> & <code>DBSCAN</code>. Detected board was sliced and fed into Scrabble-tile CNN architecture with 3 conv & 2 FC layers, trained on Chars74k dataset, achieving 91% training acc.                                        
                 </ProjectItem>
             </div>
         </div>
