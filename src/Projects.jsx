@@ -15,8 +15,7 @@ export default function Projects({ iconStyling, waveStyling}) {
                     mb={3.5}
                     fB={40}
                     iconStyling={iconStyling}
-                    // skillsArray={["Python", "Selenium", "Flask", "JavaScript", "Gunicorn", "Nginx", "Google Cloud", "Git"]}
-                    skillsArray={["python-dark", "selenium", "flask-light", "javascript", "nginx-dark", "googlecp-dark", "git"]}
+                    skillsArray={["python-dark", "selenium", "flask-light", "javascript", "nginx-dark", "gunicorn", "googlecp-dark", "git"]}
                     url="https://github.com/b3nkang/analysis-unlocker-extension"
                 >
                     Developed Chrome Extension to unlock Chess.com’s paid subscription analysis for free via <code>Selenium</code> and <code>Flask</code>. Configured robust deployment with a <code>Gunicorn</code> server, <code>Nginx</code> reverse proxy, and <code>systemd</code> for 100% uptime. Extension was sent to Chess.com CTO and resulted in security review & patch.
@@ -28,8 +27,7 @@ export default function Projects({ iconStyling, waveStyling}) {
                     mb={0}
                     fB={40}
                     iconStyling={iconStyling}
-                    // skillsArray={["OpenCV", "Python", "TensorFlow", "NumPy", "Git"]}
-                    skillsArray={["opencv-dark", "python-dark", "tensorflow", "numpy","pandas","git"]}
+                    skillsArray={["opencv-dark", "python-dark", "tensorflow", "numpy","pandas","kaggle","git"]}
                     url="https://github.com/b3nkang/scrabble-detector"
                 >
                     Developed computer vision-based board detector on NASPA Scrabble streams using OpenCV’s <code>Otsu</code> thresholding, largest contour, <code>Hough-line</code> & <code>DBSCAN</code>. Detected board was sliced and fed into Scrabble-tile CNN architecture with 3 conv & 2 FC layers, trained on Chars74k dataset, achieving 91% training acc.                                        
