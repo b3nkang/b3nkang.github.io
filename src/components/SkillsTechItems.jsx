@@ -29,7 +29,7 @@ function SkillsTechItem({ gap=10, mb=20, skillsArray, itemName, iconStyling}) {
                 flexBasis: "70%"
             }}>
                 { skillsArray.map((imgUrl) => {
-                    return <img key={imgUrl} src={`https://github.com/onemarc/tech-icons/raw/main/icons/${imgUrl}.svg`} style={{ width: '50px', ...iconStyling}} />
+                    return <img key={imgUrl} alt={imgUrl} src={`https://github.com/onemarc/tech-icons/raw/main/icons/${imgUrl}.svg`} style={{ width: '50px', ...iconStyling}} />
                 })}
             </div>
         </div>

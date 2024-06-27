@@ -66,7 +66,7 @@ export default function VolunteerItem({
                     marginTop: "1.0vh"
                 }}>
                     { skillsArray.map((imgUrl) => {
-                        return <img key={imgUrl} src={`https://github.com/onemarc/tech-icons/raw/main/icons/${imgUrl}.svg`} style={{ width: '50px', ...iconStyling}} />
+                        return <img key={imgUrl} alt={imgUrl} src={`https://github.com/onemarc/tech-icons/raw/main/icons/${imgUrl}.svg`} style={{ width: '50px', ...iconStyling}} />
                     })}
                 </div>
                 <div style={{height: `${itemb}vh`}}></div>

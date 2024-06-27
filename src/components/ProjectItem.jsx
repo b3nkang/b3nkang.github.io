@@ -64,7 +64,7 @@ export default function ProjectItem({
                         return <LanguageButton text={skill} iconStyling={iconStyling} />
                     })} */}
                     { skillsArray.map((imgUrl) => {
-                        return <img key={imgUrl} src={`https://github.com/onemarc/tech-icons/raw/main/icons/${imgUrl}.svg`} style={{ width: '50px', ...iconStyling}} />
+                        return <img key={imgUrl} alt={imgUrl} src={`https://github.com/onemarc/tech-icons/raw/main/icons/${imgUrl}.svg`} style={{ width: '50px', ...iconStyling}} />
                     })}
                 </div>
 
