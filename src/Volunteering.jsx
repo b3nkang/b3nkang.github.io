@@ -45,7 +45,7 @@ function Volunteering({ iconStyling, waveStyling}) {
                     iconStyling={iconStyling}
                     skillsArray={["react-dark", "typescript", "materialui", "nextjs-dark", "tailwindcss-dark","firebase-light","git","github-dark"]}
                 >
-                    Develop sites for local groups at Full Stack @ Brown, Brown’s pro-bono SWE club. Project Manager for Spring ’24. Created Brown JCA’s site with <code>TS/React/Material-UI</code> on 9-dev team, using <code>Firebase</code> for posts & image uploads.                
+                    Develop sites for local groups at Full Stack @ Brown, Brown’s pro-bono SWE club. Led 10-dev team in Spring 2024 to build, from scratch, the <a href="https://meyers-lab.vercel.app/" className="fade-link">Brown Medicare Coding Report</a> for Prof. David Meyers' lab. Headed Firestore integration efforts as dev for Fall 2023, building Brown JCA’s site.                
                 </VolunteerItem>
                 <VolunteerItem
                     imgSrc={"/images/develop_for_good_logo.jpeg"}
@@ -59,8 +59,9 @@ function Volunteering({ iconStyling, waveStyling}) {
                     bottomPadding={0}
                     mt={4.5}
                     mb={0}
+                    itemb={0}
                 >
-                    Team: involveMINT. Using Angular, Express.
+                    Work within a legacy <code>Angular</code> codebase with an <code>Express.js</code> backend and <code>Firebase-emulators</code> mimicing <code>SQL</code>, supporting a local Pittsburgh-based non-profit, involveMINT.
                 </VolunteerItem>
             </div>
         </div>

@@ -49,7 +49,7 @@ function Experience({ iconStyling, waveStyling}) {
             mb={0}
             iconStyling={iconStyling}
         >
-            Built world’s largest corpus of queryable LENR research on AI & Low-Energy Nuclear Reactions (AI-LENR) team. Co-authored paper in IEEE ICBDA 2024 and was main contributor to <a href="https://lenrdashboard.com/#" style={{ color: "black"}}>LENRdashboard.com</a>, built with <code>D3.js</code>, <code>JavaScript</code>, <code>HTML/CSS</code>.
+            Built world’s largest corpus of queryable LENR research on AI & Low-Energy Nuclear Reactions (AI-LENR) team. Co-authored paper in IEEE ICBDA 2024 and was main contributor to <a href="https://lenrdashboard.com/#" className='fade-link'>LENRdashboard.com</a>, built with <code>D3.js</code>, <code>JavaScript</code>, <code>HTML/CSS</code>.
         </ExperienceItem>  
     </div>
     )
