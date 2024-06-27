@@ -13,6 +13,7 @@ export default function VolunteerItem({
     bottomPadding=1, 
     mb=3.5, 
     mt=3,
+    itemb=0,
     children
 }) {
     return (
@@ -42,15 +43,17 @@ export default function VolunteerItem({
             <div style={{
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContent: 'start',
+                justifyContent: 'space-between',
                 alignItems: 'end',
                 flexBasis: '30%',
                 textAlign: 'right',
                 fontSize: '19px',
                 gap: '10px',
             }}>
-                <div style={{ lineHeight: '0.95' }}>{period}</div>
-                <div style={{ lineHeight: '0.95', fontFamily: 'canela-dlightitalic' }}>{location}</div>
+                <div>
+                    <div style={{ lineHeight: '0.95', marginBottom: "8px" }}>{period}</div>
+                    <div style={{ lineHeight: '0.95', fontFamily: 'canela-dlightitalic' }}>{location}</div>
+                </div>
                 <div style={{                                                 
                     width: "auto",
                     display: "flex",
@@ -60,12 +63,13 @@ export default function VolunteerItem({
                     flexWrap: "wrap",
                     flexBasis: "40%",
                     // marginBottom: "1vh",
-                    marginTop: "1.5vh"
+                    marginTop: "1.0vh"
                 }}>
                     { skillsArray.map((imgUrl) => {
                         return <img key={imgUrl} src={`https://github.com/onemarc/tech-icons/raw/main/icons/${imgUrl}.svg`} style={{ width: '50px', ...iconStyling}} />
                     })}
                 </div>
+                <div style={{height: `${itemb}vh`}}></div>
             </div>
         </div>
         <div style={{
