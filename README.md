@@ -5,12 +5,12 @@ nothing to see here...
 #### deployment
 
 ```
-general deploy:
 rm -rf dist
 npm run build
 cd gh-pages
 cp -r ../dist/* .
-cp CNAME gh-pages/ => if nec
-git add commit
+cp CNAME gh-pages/
+git add .
+git commit -m "update and deploy"
 git push origin gh-pages --force
 ```
