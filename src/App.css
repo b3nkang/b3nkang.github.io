@@ -102,3 +102,14 @@ div.cardBounder {
   flex-shrink: 0;
   max-width: 1100px;
 }
+
+/* url fade-in-out in desc */
+.fade-link {
+  color: black;
+  transition: color 0.25s ease-in-out;
+}
+
+.fade-link:hover {
+  color: #646cff;
+;
+}
