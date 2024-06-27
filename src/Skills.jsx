@@ -42,12 +42,12 @@ export default function Skills({ iconStyling, waveStyling}) {
             <SkillsTechItem
                 itemName="Languages:" 
                 iconStyling={iconStyling}
-                skillsArray={["python-dark", "javascript", "typescript", "html", "css", "java-dark"]}
+                skillsArray={["python-dark", "javascript", "typescript", "html", "css", "java-dark", "latex"]}
             />
             <SkillsTechItem
                 itemName="Frameworks & Libraries:" 
                 iconStyling={iconStyling}
-                skillsArray={["react-dark", "nextjs-dark", "tailwindcss-dark","nodejs-dark","flask-light", "selenium", "pytest-dark", "playwright-dark"]}
+                skillsArray={["react-dark", "vitejs-dark", "nextjs-dark", "tailwindcss-dark", "scss", "nodejs-dark","flask-light", "selenium", "pytest-dark", "vitest-dark", "junit5-light", "playwright-dark", "expressjs-dark"]}
             />
             <SkillsTechItem 
                 mb={0} 
