@@ -53,7 +53,7 @@ export default function Skills({ iconStyling, waveStyling}) {
                 mb={0} 
                 itemName="Databases & Dev Tools:" 
                 iconStyling={iconStyling}
-                skillsArray={["mongodb-dark", "firebase-light", "googlecp-dark", "nginx", "git", "docker", "github-dark","vscode-dark", "intellijidea-dark","jira-dark" ]}
+                skillsArray={["mongodb-dark", "firebase-light", "googlecp-dark", "nginx", "git", "docker", "vscode-dark", "intellijidea-dark","vercel-light","jira-dark" ]}
             />
 
         </div>
