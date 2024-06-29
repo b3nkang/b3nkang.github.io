@@ -12,7 +12,7 @@ export default function VolunteerItem({
     skillsArray,
     bottomPadding=1, 
     mb=3.5, 
-    mt=3,
+    mt=2.55,
     itemb=0,
     children
 }) {
@@ -63,7 +63,7 @@ export default function VolunteerItem({
                     flexWrap: "wrap",
                     flexBasis: "40%",
                     // marginBottom: "1vh",
-                    marginTop: "2vh"
+                    marginTop: "1.7vh"
                 }}>
                     { skillsArray.map((imgUrl) => {
                         return <img key={imgUrl} alt={imgUrl} src={`https://github.com/onemarc/tech-icons/raw/main/icons/${imgUrl}.svg`} style={{ width: '50px', ...iconStyling, transition: "opacity 1.5s ease-in-out"}} />
