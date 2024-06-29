@@ -45,7 +45,7 @@ function Volunteering({ iconStyling, waveStyling}) {
                     iconStyling={iconStyling}
                     skillsArray={["react-dark", "typescript", "materialui", "nextjs-dark", "tailwindcss-dark","firebase-light","git","vercel-light"]}
                 >
-                    Develop sites for local groups at Full Stack @ Brown, Brown’s pro-bono SWE club. Led 10-dev team in Spring 2024 to build, from scratch, the <a href="https://meyers-lab.vercel.app/" className="fade-link">Brown Medicare Coding Report</a> for Prof. David Meyers' lab. Headed Firestore integration efforts as dev for Fall 2023, building Brown JCA’s site.                
+                    Develop sites for local groups at Full Stack @ Brown, Brown’s pro-bono SWE club. Led 10-dev team in Spring 2024 to build, from scratch, the <a href="https://meyers-lab.vercel.app/" className="fade-link">Brown Medicare Coding Report</a> for Prof. David Meyers' lab. Headed Firestore integration efforts as dev during Fall 2023 for Brown JCA.                
                 </VolunteerItem>
                 <VolunteerItem
                     imgSrc={"/images/develop_for_good_logo.jpeg"}
@@ -57,7 +57,7 @@ function Volunteering({ iconStyling, waveStyling}) {
                     skillsArray={["angular",  "typescript","firebase-light","docker", "scss","expressjs-dark"]}
                     iconStyling={iconStyling}
                     bottomPadding={0}
-                    mt={4.5}
+                    mt={2.75}
                     mb={0}
                     itemb={0}
                 >
