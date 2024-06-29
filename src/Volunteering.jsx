@@ -43,7 +43,7 @@ function Volunteering({ iconStyling, waveStyling}) {
                     period="Sept. 2023 – Current"
                     location={`Providence, RI`}
                     iconStyling={iconStyling}
-                    skillsArray={["react-dark", "typescript", "materialui", "nextjs-dark", "tailwindcss-dark","firebase-light","git","github-dark"]}
+                    skillsArray={["react-dark", "typescript", "materialui", "nextjs-dark", "tailwindcss-dark","firebase-light","git","vercel-light"]}
                 >
                     Develop sites for local groups at Full Stack @ Brown, Brown’s pro-bono SWE club. Led 10-dev team in Spring 2024 to build, from scratch, the <a href="https://meyers-lab.vercel.app/" className="fade-link">Brown Medicare Coding Report</a> for Prof. David Meyers' lab. Headed Firestore integration efforts as dev for Fall 2023, building Brown JCA’s site.                
                 </VolunteerItem>
