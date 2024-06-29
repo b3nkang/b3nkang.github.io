@@ -23,7 +23,7 @@ export default function Projects({ iconStyling, waveStyling}) {
                 <ProjectItem
                     title="Scrabble Detector with CV & CNN Classification"
                     bottomPadding={0}
-                    mt={4.5}
+                    mt={3.75}
                     mb={0}
                     fB={40}
                     iconStyling={iconStyling}
