@@ -70,7 +70,7 @@ function Experience({ iconStyling, waveStyling}) {
             iconStyling={iconStyling}
             skillsArray={["javascript","html", "css", "d3", "mongodb-dark", "tableau"]}
             bottomPadding={0}
-            mt={4.5}
+            mt={3}
             mb={0}
         >
             Built world’s largest corpus of queryable LENR research on AI & Low-Energy Nuclear Reactions (AI-LENR) team. Co-authored paper in IEEE ICBDA 2024 and was main contributor to <a href="https://lenrdashboard.com/#" className='fade-link'>LENRdashboard.com</a>, built with <code>D3.js</code>, <code>JavaScript</code>, <code>HTML/CSS</code>.
