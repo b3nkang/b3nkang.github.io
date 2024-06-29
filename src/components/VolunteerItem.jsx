@@ -63,10 +63,10 @@ export default function VolunteerItem({
                     flexWrap: "wrap",
                     flexBasis: "40%",
                     // marginBottom: "1vh",
-                    marginTop: "1.0vh"
+                    marginTop: "2vh"
                 }}>
                     { skillsArray.map((imgUrl) => {
-                        return <img key={imgUrl} alt={imgUrl} src={`https://github.com/onemarc/tech-icons/raw/main/icons/${imgUrl}.svg`} style={{ width: '50px', ...iconStyling}} />
+                        return <img key={imgUrl} alt={imgUrl} src={`https://github.com/onemarc/tech-icons/raw/main/icons/${imgUrl}.svg`} style={{ width: '50px', ...iconStyling, transition: "opacity 1.5s ease-in-out"}} />
                     })}
                 </div>
                 <div style={{height: `${itemb}vh`}}></div>
