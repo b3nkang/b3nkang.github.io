@@ -54,7 +54,7 @@ function Volunteering({ iconStyling, waveStyling}) {
                     title="Software Developer"
                     period="May. 2024 – Aug. 2024"
                     location="(Remote) Pittsburgh, PA"
-                    skillsArray={["angular",  "typescript","firebase-light","docker", "scss","expressjs-dark"]}
+                    skillsArray={["angular", "ionic", "typescript","firebase-light","docker", "scss","expressjs-dark"]}
                     iconStyling={iconStyling}
                     bottomPadding={0}
                     mt={2.75}
