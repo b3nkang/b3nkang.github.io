@@ -21,7 +21,7 @@ export default function VolunteerItem({
         <div style={{
             display: 'flex',
             justifyContent: 'space-between',
-            gap: '0vw',
+            gap: '3px',
         }}>
             <div style={{
                 flexBasis: `70%`
