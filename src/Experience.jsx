@@ -56,7 +56,7 @@ function Experience({ iconStyling, waveStyling}) {
             period="Nov. 2023 – Jan. 2024"
             location="Providence, RI"
             iconStyling={iconStyling}
-            skillsArray={["react-dark","typescript", "tailwindcss-dark",  "nextjs-dark", "framermotion", "css", "notion-light"]}
+            skillsArray={["react-dark","typescript", "tailwindcss-dark",  "nextjs-dark", "framermotion", "notion-light"]}
         >
             Led homepage migration to <code>React/TypeScript/Next.js</code> stack, deprecating thousands of lines of code. Optimized site performance with React Lazy Load, Next.js Image and server-side rendering to achieve Lighthouse SEO score of 100.
         </VolunteerItem>
